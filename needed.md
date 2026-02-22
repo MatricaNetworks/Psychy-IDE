@@ -38,6 +38,65 @@ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
     ./scripts/code.sh
     ```
 
-## 2. Windows & 3. macOS
+## 2. Windows
 
-See the specific sections below for platform-specific prerequisites, but **always ensure you are using Node.js v22**.
+1. **Install Prerequisites**:
+   ```bash
+   # Using Chocolatey
+   choco install git python3 visualstudio2019buildtools nodejs-lts
+   ```
+
+2. **Build and Watch**:
+   Ensure you are using Node 22:
+   ```bash
+   nvm use 22
+   npm run watch
+   ```
+
+3. **Run the IDE**:
+   ```bash
+   cd %USERPROFILE%\\Shell-IDE\\vscode
+   nvm use 22
+   .\\scripts\\code.bat
+   ```
+
+## 3. macOS (Intel)
+
+1. **Install Prerequisites**:
+   ```bash
+   brew install git python node
+   ```
+
+2. **Build and Watch**:
+   ```bash
+   nvm use 22
+   npm run watch
+   ```
+
+3. **Run the IDE**:
+   ```bash
+   cd ~/Shell-IDE/vscode
+   nvm use 22
+   ./scripts/code.sh
+   ```
+
+## 4. macOS (Apple Silicon)
+
+1. **Install Prerequisites**:
+   ```bash
+   brew install git python node
+   # Ensure you have the ARM version of node via nvm
+   ```
+
+2. **Build and Watch**:
+   ```bash
+   nvm use 22
+   npm run watch
+   ```
+
+3. **Run the IDE**:
+   ```bash
+   cd ~/Shell-IDE/vscode
+   nvm use 22
+   ./scripts/code.sh
+   ```

@@ -97,6 +97,7 @@ else
   setpath "product" "urlProtocol" "shell-ide"
   setpath "product" "serverApplicationName" "shell-ide-server"
   setpath "product" "serverDataFolderName" ".shell-ide-server"
+  setpath "product" "dataFolderName" ".shell-ide"
   setpath "product" "darwinBundleIdentifier" "com.shell-ide"
   setpath "product" "win32AppUserModelId" "ShellIDE.ShellIDE"
   setpath "product" "win32DirName" "Shell-IDE"
