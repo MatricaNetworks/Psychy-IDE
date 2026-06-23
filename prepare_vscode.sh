@@ -144,6 +144,12 @@ if [[ "${DISABLE_UPDATE}" == "yes" ]]; then
   mv ../patches/00-update-disable.patch.yet ../patches/00-update-disable.patch
 fi
 
+for file in ../patches/*.json; do
+  if [[ -f "${file}" ]]; then
+    apply_actions "${file}"
+  fi
+done
+
 for file in ../patches/*.patch; do
   if [[ -f "${file}" ]]; then
     apply_patch "${file}"
