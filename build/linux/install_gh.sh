@@ -5,9 +5,9 @@ set -ex
 GH_ARCH="amd64"
 
 for i in {1..5}; do
-  TAG=$( curl --retry 12 --retry-delay 30 "https://api.github.com/repos/cli/cli/releases/latest" 2>/dev/null | jq --raw-output '.tag_name' )
+  TAG=$( curl --retry 12 --retry-delay 30 -sI "https://github.com/cli/cli/releases/latest" 2>/dev/null | grep -i location: | sed 's|.*tag/||' | tr -d '\r' )
 
-  if [[ $? == 0 && "${TAG}" != "null" ]]; then
+  if [[ $? == 0 && -n "${TAG}" && "${TAG}" != "null" ]]; then
     break
   fi
 
