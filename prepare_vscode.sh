@@ -202,9 +202,9 @@ cp ../npmrc .npmrc
 
 for i in {1..5}; do # try 5 times
   if [[ "${CI_BUILD}" != "no" && "${OS_NAME}" == "osx" ]]; then
-    CXX=clang++ npm ci && break
+    CXX=clang++ npm install --no-audit --no-fund && break
   else
-    npm ci && break
+    npm install --no-audit --no-fund && break
   fi
 
   if [[ $i == 5 ]]; then
