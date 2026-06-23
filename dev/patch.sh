@@ -2,9 +2,24 @@
 
 set -e
 
-echo "$#"
+normalize_file() {
+  if [[ "${1}" == *patch ]]; then
+    FILE="${1}"
+  else
+    FILE="${1}.patch"
+  fi
+
+  if [[ "${FILE}" == patches/* ]]; then
+    FILE="../${FILE}"
+  else
+    FILE="../patches/${FILE}"
+  fi
+}
 
 cd vscode || { echo "'vscode' dir not found"; exit 1; }
+
+# include common functions
+. ../utils.sh
 
 git add .
 git reset -q --hard HEAD
@@ -13,37 +28,83 @@ while [[ -n "$( git log -1 | grep "VSCODIUM HELPER" )" ]]; do
   git reset -q --hard HEAD~
 done
 
-if [[ "${1}" == *patch ]]; then
-  FILE="../patches/${1}"
-else
-  FILE="../patches/${1}.patch"
-fi
+normalize_file "${1}"
 
 if [[ "${FILE}" != "../patches/helper/settings.patch" ]]; then
   git apply --reject "../patches/helper/settings.patch"
 
-  while [ $# -gt 1 ]; do
-    echo "Parameter: $1"
-    if [[ "${1}" == *patch ]]; then
-      FILE="../patches/${1}"
-    else
-      FILE="../patches/${1}.patch"
+  if [[ $# -gt 1 ]]; then
+    while [ $# -gt 1 ]; do
+      echo "Parameter: $1"
+      normalize_file "${1}"
+
+      git apply --reject "${FILE}"
+
+      shift
+    done
+
+    git add .
+    git commit --no-verify -q -m "VSCODIUM HELPER"
+
+    normalize_file "${1}"
+  else
+    normalize_file "${1}"
+
+    BASENAME=$(basename "${FILE}")
+    DIRNAME=$(dirname "${FILE}")
+
+    if [[ "${BASENAME}" =~ ^([0-9])([1-9])(-.*)\.patch$ ]]; then
+      GROUP_ID="${BASH_REMATCH[1]}"
+      INDEX="${BASH_REMATCH[2]}"
+      ENDNAME="${BASH_REMATCH[3]}"
+
+      for ((I = 0; I < INDEX; I++)); do
+        NOT_FOUND=1
+
+        for CANDIDATE in "${DIRNAME}/${GROUP_ID}${I}-"*.patch; do
+          if [[ -f "$CANDIDATE" ]]; then
+            echo "Candidate: ${CANDIDATE}"
+            normalize_file "${CANDIDATE}"
+
+            git apply --reject "${FILE}"
+
+            NOT_FOUND=0
+          fi
+        done
+
+        if (( $NOT_FOUND )); then
+          for CANDIDATE in "${DIRNAME}/${GROUP_ID}${I}-"*.json; do
+            if [[ -f "$CANDIDATE" ]]; then
+              echo "Candidate: ${CANDIDATE}"
+
+              apply_actions "${CANDIDATE}"
+
+              NOT_FOUND=0
+            fi
+          done
+        fi
+
+        if (( $NOT_FOUND )); then
+          for CANDIDATE in "${DIRNAME}/../${GROUP_ID}${I}-"*.patch; do
+            if [[ -f "$CANDIDATE" ]]; then
+              echo "Candidate: ${CANDIDATE}"
+              normalize_file "${CANDIDATE}"
+
+              git apply --reject "${FILE}"
+            fi
+          done
+        fi
+      done
     fi
 
-    git apply --reject "${FILE}"
+    git add .
+    git commit --no-verify -q -m "VSCODIUM HELPER"
 
-    shift
-  done
-
-  git add .
-  git commit --no-verify -q -m "VSCODIUM HELPER"
-
-  if [[ "${1}" == *patch ]]; then
-    FILE="../patches/${1}"
-  else
-    FILE="../patches/${1}.patch"
+    normalize_file "${1}"
   fi
 fi
+
+echo "FILE: ${FILE}"
 
 if [[ -f "${FILE}" ]]; then
   if [[ -f "${FILE}.bak" ]]; then
