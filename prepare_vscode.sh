@@ -54,66 +54,66 @@ if [[ "${DISABLE_UPDATE}" != "yes" ]]; then
   setpath "product" "updateUrl" "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master"
 
   if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-    setpath "product" "downloadUrl" "https://github.com/Shell-IDE/shell-ide-insiders/releases"
+    setpath "product" "downloadUrl" "https://github.com/Psychy-IDE/psychy-ide-insiders/releases"
   else
-    setpath "product" "downloadUrl" "https://github.com/Shell-IDE/shell-ide/releases"
+    setpath "product" "downloadUrl" "https://github.com/Psychy-IDE/psychy-ide/releases"
   fi
 fi
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-  setpath "product" "nameShort" "Shell-IDE - Insiders"
-  setpath "product" "nameLong" "Shell-IDE - Insiders"
-  setpath "product" "applicationName" "shell-ide-insiders"
-  setpath "product" "dataFolderName" ".shell-ide-insiders"
-  setpath "product" "linuxIconName" "shell-ide-insiders"
+  setpath "product" "nameShort" "Psychy-IDE - Insiders"
+  setpath "product" "nameLong" "Psychy-IDE - Insiders"
+  setpath "product" "applicationName" "psychy-ide-insiders"
+  setpath "product" "dataFolderName" ".psychy-ide-insiders"
+  setpath "product" "linuxIconName" "psychy-ide-insiders"
   setpath "product" "quality" "insider"
-  setpath "product" "urlProtocol" "shell-ide-insiders"
-  setpath "product" "serverApplicationName" "shell-ide-server-insiders"
-  setpath "product" "serverDataFolderName" ".shell-ide-server-insiders"
-  setpath "product" "darwinBundleIdentifier" "com.shell-ide.ShellIDEInsiders"
+  setpath "product" "urlProtocol" "psychy-ide-insiders"
+  setpath "product" "serverApplicationName" "psychy-ide-server-insiders"
+  setpath "product" "serverDataFolderName" ".psychy-ide-server-insiders"
+  setpath "product" "darwinBundleIdentifier" "com.psychy-ide.ShellIDEInsiders"
   setpath "product" "win32AppUserModelId" "ShellIDE.ShellIDEInsiders"
-  setpath "product" "win32DirName" "Shell-IDE Insiders"
+  setpath "product" "win32DirName" "Psychy-IDE Insiders"
   setpath "product" "win32MutexName" "shellideinsiders"
-  setpath "product" "win32NameVersion" "Shell-IDE Insiders"
+  setpath "product" "win32NameVersion" "Psychy-IDE Insiders"
   setpath "product" "win32RegValueName" "ShellIDEInsiders"
-  setpath "product" "win32ShellNameShort" "Shell-IDE Insiders"
+  setpath "product" "win32ShellNameShort" "Psychy-IDE Insiders"
   setpath "product" "win32AppId" "{{EF35BB36-FA7E-4BB9-B7DA-D1E09F2DA9C9}"
   setpath "product" "win32x64AppId" "{{B2E0DDB2-120E-4D34-9F7E-8C688FF839A2}"
   setpath "product" "win32arm64AppId" "{{44721278-64C6-4513-BC45-D48E07830599}"
   setpath "product" "win32UserAppId" "{{ED2E5618-3E7E-4888-BF3C-A6CCC84F586F}"
   setpath "product" "win32x64UserAppId" "{{20F79D0D-A9AC-4220-9A81-CE675FFB6B41}"
   setpath "product" "win32arm64UserAppId" "{{2E362F92-14EA-455A-9ABD-3E656BBBFE71}"
-  setpath "product" "tunnelApplicationName" "shell-ide-insiders-tunnel"
+  setpath "product" "tunnelApplicationName" "psychy-ide-insiders-tunnel"
   setpath "product" "win32TunnelServiceMutex" "shellideinsiders-tunnelservice"
   setpath "product" "win32TunnelMutex" "shellideinsiders-tunnel"
   setpath "product" "win32ContextMenu.x64.clsid" "90AAD229-85FD-43A3-B82D-8598A88829CF"
   setpath "product" "win32ContextMenu.arm64.clsid" "7544C31C-BDBF-4DDF-B15E-F73A46D6723D"
 else
-  setpath "product" "nameShort" "Shell-IDE"
-  setpath "product" "nameLong" "Shell-IDE"
-  setpath "product" "applicationName" "shell-ide"
-  setpath "product" "linuxIconName" "shell-ide"
+  setpath "product" "nameShort" "Psychy-IDE"
+  setpath "product" "nameLong" "Psychy-IDE"
+  setpath "product" "applicationName" "psychy-ide"
+  setpath "product" "linuxIconName" "psychy-ide"
   setpath "product" "quality" "stable"
-  setpath "product" "urlProtocol" "shell-ide"
-  setpath "product" "serverApplicationName" "shell-ide-server"
-  setpath "product" "serverDataFolderName" ".shell-ide-server"
-  setpath "product" "dataFolderName" ".shell-ide"
-  setpath "product" "darwinBundleIdentifier" "com.shell-ide"
+  setpath "product" "urlProtocol" "psychy-ide"
+  setpath "product" "serverApplicationName" "psychy-ide-server"
+  setpath "product" "serverDataFolderName" ".psychy-ide-server"
+  setpath "product" "dataFolderName" ".psychy-ide"
+  setpath "product" "darwinBundleIdentifier" "com.psychy-ide"
   setpath "product" "win32AppUserModelId" "ShellIDE.ShellIDE"
-  setpath "product" "win32DirName" "Shell-IDE"
+  setpath "product" "win32DirName" "Psychy-IDE"
   setpath "product" "win32MutexName" "shellide"
-  setpath "product" "win32NameVersion" "Shell-IDE"
+  setpath "product" "win32NameVersion" "Psychy-IDE"
   setpath "product" "win32RegValueName" "ShellIDE"
-  setpath "product" "win32ShellNameShort" "Shell-IDE"
+  setpath "product" "win32ShellNameShort" "Psychy-IDE"
   setpath "product" "win32AppId" "{{763CBF88-25C6-4B10-952F-326AE657F16B}"
   setpath "product" "win32x64AppId" "{{88DA3577-054F-4CA1-8122-7D820494CFFB}"
   setpath "product" "win32arm64AppId" "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}"
   setpath "product" "win32UserAppId" "{{0FD05EB4-651E-4E78-A062-515204B47A3A}"
   setpath "product" "win32x64UserAppId" "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}"
   setpath "product" "win32arm64UserAppId" "{{57FD70A5-1B8D-4875-9F40-C5553F094828}"
-  setpath "product" "tunnelApplicationName" "shell-ide-tunnel"
-  setpath "product" "win32TunnelServiceMutex" "shell-ide-tunnelservice"
-  setpath "product" "win32TunnelMutex" "shell-ide-tunnel"
+  setpath "product" "tunnelApplicationName" "psychy-ide-tunnel"
+  setpath "product" "win32TunnelServiceMutex" "psychy-ide-tunnelservice"
+  setpath "product" "win32TunnelMutex" "psychy-ide-tunnel"
   setpath "product" "win32ContextMenu.x64.clsid" "D910D5E6-B277-4F4A-BDC5-759A34EEE25D"
   setpath "product" "win32ContextMenu.arm64.clsid" "4852FC55-4A84-4EA1-9C86-D53BE3DF83C0"
 fi
@@ -230,16 +230,16 @@ cp package.json{,.bak}
 
 setpath "package" "version" "${RELEASE_VERSION%-insider}"
 
-replace 's|Microsoft Corporation|Shell-IDE|' package.json
+replace 's|Microsoft Corporation|Psychy-IDE|' package.json
 
 cp resources/server/manifest.json{,.bak}
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-  setpath "resources/server/manifest" "name" "Shell-IDE - Insiders"
-  setpath "resources/server/manifest" "short_name" "Shell-IDE - Insiders"
+  setpath "resources/server/manifest" "name" "Psychy-IDE - Insiders"
+  setpath "resources/server/manifest" "short_name" "Psychy-IDE - Insiders"
 else
-  setpath "resources/server/manifest" "name" "Shell-IDE"
-  setpath "resources/server/manifest" "short_name" "Shell-IDE"
+  setpath "resources/server/manifest" "name" "Psychy-IDE"
+  setpath "resources/server/manifest" "short_name" "Psychy-IDE"
 fi
 
 # announcements
@@ -247,8 +247,8 @@ replace "s|\\[\\/\\* BUILTIN_ANNOUNCEMENTS \\*\\/\\]|$( tr -d '\n' < ../announce
 
 ../undo_telemetry.sh
 
-replace 's|Microsoft Corporation|Shell-IDE|' build/lib/electron.ts
-replace 's|([0-9]) Microsoft|\1 Shell-IDE|' build/lib/electron.ts
+replace 's|Microsoft Corporation|Psychy-IDE|' build/lib/electron.ts
+replace 's|([0-9]) Microsoft|\1 Psychy-IDE|' build/lib/electron.ts
 
 if [[ "${OS_NAME}" == "linux" ]]; then
   # microsoft adds their apt repo to sources
@@ -256,37 +256,65 @@ if [[ "${OS_NAME}" == "linux" ]]; then
   # as we are renaming the application to vscodium
   # we need to edit a line in the post install template
   if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-    sed -i "s/code-oss/shell-ide-insiders/" resources/linux/debian/postinst.template
+    sed -i "s/code-oss/psychy-ide-insiders/" resources/linux/debian/postinst.template
   else
-    sed -i "s/code-oss/shell-ide/" resources/linux/debian/postinst.template
+    sed -i "s/code-oss/psychy-ide/" resources/linux/debian/postinst.template
   fi
 
   # fix the packages metadata
   # code.appdata.xml
-  sed -i 's|Visual Studio Code|Shell-IDE|g' resources/linux/code.appdata.xml
+  sed -i 's|Visual Studio Code|Psychy-IDE|g' resources/linux/code.appdata.xml
   sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/VSCodium/vscodium#download-install|' resources/linux/code.appdata.xml
   sed -i 's|https://code.visualstudio.com/home/home-screenshot-linux-lg.png|https://vscodium.com/img/vscodium.png|' resources/linux/code.appdata.xml
   sed -i 's|https://code.visualstudio.com|https://vscodium.com|' resources/linux/code.appdata.xml
 
   # control.template
-  sed -i 's|Microsoft Corporation <vscode-linux@microsoft.com>|Shell-IDE Team https://github.com/Shell-IDE/shell-ide/graphs/contributors|'  resources/linux/debian/control.template
-  sed -i 's|Visual Studio Code|Shell-IDE|g' resources/linux/debian/control.template
+  sed -i 's|Microsoft Corporation <vscode-linux@microsoft.com>|Psychy-IDE Team https://github.com/Psychy-IDE/psychy-ide/graphs/contributors|'  resources/linux/debian/control.template
+  sed -i 's|Visual Studio Code|Psychy-IDE|g' resources/linux/debian/control.template
   sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/VSCodium/vscodium#download-install|' resources/linux/debian/control.template
   sed -i 's|https://code.visualstudio.com|https://vscodium.com|' resources/linux/debian/control.template
 
   # code.spec.template
-  sed -i 's|Microsoft Corporation|Shell-IDE Team|' resources/linux/rpm/code.spec.template
-  sed -i 's|Visual Studio Code Team <vscode-linux@microsoft.com>|Shell-IDE Team https://github.com/Shell-IDE/shell-ide/graphs/contributors|' resources/linux/rpm/code.spec.template
-  sed -i 's|Visual Studio Code|Shell-IDE|' resources/linux/rpm/code.spec.template
+  sed -i 's|Microsoft Corporation|Psychy-IDE Team|' resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code Team <vscode-linux@microsoft.com>|Psychy-IDE Team https://github.com/Psychy-IDE/psychy-ide/graphs/contributors|' resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code|Psychy-IDE|' resources/linux/rpm/code.spec.template
   sed -i 's|https://code.visualstudio.com/docs/setup/linux|https://github.com/VSCodium/vscodium#download-install|' resources/linux/rpm/code.spec.template
   sed -i 's|https://code.visualstudio.com|https://vscodium.com|' resources/linux/rpm/code.spec.template
 
   # snapcraft.yaml
-  sed -i 's|Visual Studio Code|Shell-IDE|'  resources/linux/rpm/code.spec.template
+  sed -i 's|Visual Studio Code|Psychy-IDE|'  resources/linux/rpm/code.spec.template
 elif [[ "${OS_NAME}" == "windows" ]]; then
   # code.iss
-  sed -i 's|https://code.visualstudio.com|https://shell-ide.com|' build/win32/code.iss
-  sed -i 's|Microsoft Corporation|Shell-IDE|' build/win32/code.iss
+  sed -i 's|https://code.visualstudio.com|https://psychy-ide.com|' build/win32/code.iss
+  sed -i 's|Microsoft Corporation|Psychy-IDE|' build/win32/code.iss
 fi
 
 cd ..
+
+# Add mobile development extension pack
+mkdir -p vscode/extensions/psychy-mobile-pack
+cat <<EOF > vscode/extensions/psychy-mobile-pack/package.json
+{
+  "name": "psychy-mobile-pack",
+  "displayName": "Psychy Mobile Development Pack (Full Studio & Xcode Edition)",
+  "description": "Comprehensive extensions for Android, iOS, and cross-platform app development featuring full emulator, debugging, and build system support.",
+  "version": "2.0.0",
+  "publisher": "MatricaNetworks",
+  "engines": { "vscode": "^1.0.0" },
+  "extensionPack": [
+    "vscjava.vscode-java-pack",
+    "mathiasfrohlich.kotlin",
+    "fwcd.kotlin",
+    "richardwillis.vscode-gradle",
+    "adelphes.android-dev-ext",
+    "canisminor.vscode-android-logcat",
+    "vknabel.vscode-swift",
+    "sweetpad.sweetpad",
+    "vadimcn.vscode-lldb",
+    "ms-vscode.cpptools",
+    "msjsdiag.vscode-react-native",
+    "dart-code.flutter",
+    "google.android-studio-ux"
+  ]
+}
+EOF

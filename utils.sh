@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
-APP_NAME="${APP_NAME:-Shell-IDE}"
-APP_NAME_LC="${APP_NAME_LC:-shell-ide}"
+APP_NAME="${APP_NAME:-Psychy-IDE}"
+APP_NAME_LC="${APP_NAME_LC:-psychy-ide}"
 ASSETS_REPOSITORY="${ASSETS_REPOSITORY:-VSCodium/vscodium}"
-BINARY_NAME="${BINARY_NAME:-shell-ide}"
+BINARY_NAME="${BINARY_NAME:-psychy-ide}"
 GH_REPO_PATH="${GH_REPO_PATH:-VSCodium/vscodium}"
-ORG_NAME="${ORG_NAME:-Shell-IDE}"
+ORG_NAME="${ORG_NAME:-Psychy-IDE}"
 TUNNEL_APP_NAME="${TUNNEL_APP_NAME:-"${BINARY_NAME}-tunnel"}"
 
 if [[ "${VSCODE_QUALITY}" == "insider" ]]; then

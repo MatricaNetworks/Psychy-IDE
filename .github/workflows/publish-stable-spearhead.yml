@@ -30,6 +30,11 @@ jobs:
   check:
     runs-on: macos-15
     permissions: {}
+    env:
+      MS_COMMIT: ''
+      MS_TAG: ''
+      RELEASE_VERSION: ''
+      SHOULD_BUILD: ''
     outputs:
       MS_COMMIT: ${{ env.MS_COMMIT }}
       MS_TAG: ${{ env.MS_TAG }}
@@ -56,7 +61,6 @@ jobs:
     needs:
       - check
     runs-on: macos-15
-    environment: publish-release
     permissions:
       contents: write   # Release
     env:

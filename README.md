@@ -1,6 +1,6 @@
 <div align="center">
 
-# Shell-IDE
+# Psychy-IDE
 
 ### By Matrica Networks Private Limited
 
@@ -14,11 +14,11 @@ Built for Developers, Cybersecurity Professionals, DevOps Engineers, Cloud Archi
 
 # Overview
 
-Shell-IDE is a next-generation Integrated Development Environment (IDE) developed by **Matrica Networks Private Limited** to provide a unified, intelligent, and high-performance software development platform.
+Psychy-IDE is a next-generation Integrated Development Environment (IDE) developed by **Matrica Networks Private Limited** to provide a unified, intelligent, and high-performance software development platform.
 
-Shell-IDE combines modern code editing, AI-assisted development, DevOps automation, database tooling, cloud integration, cybersecurity workflows, and enterprise-grade scalability into a single development environment.
+Psychy-IDE combines modern code editing, AI-assisted development, DevOps automation, database tooling, cloud integration, cybersecurity workflows, and enterprise-grade scalability into a single development environment.
 
-Designed for startups, enterprises, researchers, students, and professional developers, Shell-IDE accelerates development while maintaining security, productivity, and flexibility.
+Designed for startups, enterprises, researchers, students, and professional developers, Psychy-IDE accelerates development while maintaining security, productivity, and flexibility.
 
 ---
 
@@ -142,6 +142,24 @@ Capabilities:
 
 ---
 
+## Mobile App Development
+
+Psychy-IDE is pre-configured as a full-featured Apple and Android Development Environment, completely replacing the need for Xcode and Android Studio.
+
+### Android Studio Capabilities
+- **Native Gradle Integrations**: Visualize, sync, and execute Gradle tasks natively in the IDE.
+- **Emulators & Device Manager**: Launch and manage Android Virtual Devices (AVD) and connect physical devices seamlessly.
+- **Logcat**: Real-time log streaming and filtering for Android debugging.
+- **Language Intelligence**: Deep analysis and language server support for Java and Kotlin.
+
+### Apple / iOS Development Capabilities
+- **SweetPad Integration**: Manage provisioning profiles, iOS certificates, and xcodebuild workflows natively.
+- **iOS Simulator Manager**: Instantly boot and manage iOS simulators straight from the IDE status bar.
+- **Native CodeLLDB Debugging**: Fully integrated debugging experience for Swift, Objective-C, and C++ identical to Xcode's LLDB.
+- **Swift Intelligence**: Full-fledged Swift language server for iOS development.
+
+---
+
 ## Cybersecurity Development
 
 Purpose-built workflows for cybersecurity professionals:
@@ -176,16 +194,16 @@ Purpose-built workflows for cybersecurity professionals:
 ## Linux
 
 ```bash
-sudo dpkg -i shell-ide.deb
+sudo dpkg -i psychy-ide.deb
 
 
 
 
 Windows
-$ Shell-IDE-Setup.exe
+$ Psychy-IDE-Setup.exe
 
 macOS
-$ open Shell-IDE.dmg
+$ open Psychy-IDE.dmg
 
 System Requirements
 Minimum
@@ -198,14 +216,14 @@ Quad-Core Processor or Better
 SSD Storage
 Documentation
 Getting Started
-Install Shell-IDE
+Install Psychy-IDE
 Launch the application
 Open or create a workspace
 Configure development tools
 Start building
 Workspace Management
 
-Shell-IDE supports:
+Psychy-IDE supports:
 
 Multi-root Workspaces
 Monorepositories
@@ -213,7 +231,7 @@ Enterprise Projects
 Large-Scale Codebases
 Extension Support
 
-Shell-IDE supports extensions that enhance productivity, language support, DevOps workflows, cybersecurity tooling, cloud integrations, and database management.
+Psychy-IDE supports extensions that enhance productivity, language support, DevOps workflows, cybersecurity tooling, cloud integrations, and database management.
 
 AI Features
 
@@ -230,7 +248,7 @@ Required system dependencies are installed
 Sufficient permissions are available
 Extension Issues
 Disable conflicting extensions
-Restart Shell-IDE
+Restart Psychy-IDE
 Reinstall affected extensions
 Performance Issues
 Close unused workspaces

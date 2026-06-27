@@ -6,8 +6,8 @@ EXTENSIONS = ('.ts', '.js', '.json', '.html')
 IGNORE_MARKERS = ['@vscodium/'] # Skip replacement on lines containing this (imports)
 
 REPLACEMENT_MAP = {
-    'VSCodium': 'Shell-IDE',
-    # 'vscodium': 'shell-ide' # Skipping specific lowercase replacement to avoid breaking IDs, unless specific visible strings need it.
+    'VSCodium': 'Psychy-IDE',
+    # 'vscodium': 'psychy-ide' # Skipping specific lowercase replacement to avoid breaking IDs, unless specific visible strings need it.
 }
 
 def process_file(filepath):

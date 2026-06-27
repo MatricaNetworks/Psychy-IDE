@@ -35,10 +35,10 @@ jobs:
       VSCODE_QUALITY: stable
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
 

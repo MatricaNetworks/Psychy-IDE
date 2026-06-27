@@ -23,9 +23,9 @@ if [[ "${VSCODE_ARCH}" == "x64" ]]; then
 
   # add update's url
   if [[ "${VSCODE_QUALITY}" == "insider" ]]; then
-    sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|Shell-IDE|shell-ide-insiders|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
+    sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|Psychy-IDE|psychy-ide-insiders|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
   else
-    sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|Shell-IDE|shell-ide|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
+    sed -i 's/generate_type2_appimage/generate_type2_appimage -u "gh-releases-zsync|Psychy-IDE|psychy-ide|latest|*.AppImage.zsync"/' pkg2appimage.AppDir/AppRun
   fi
 
   # remove check so build in docker can succeed
@@ -49,7 +49,7 @@ if [[ "${VSCODE_ARCH}" == "x64" ]]; then
 
   rm -f pkg2appimage-*.AppImage
   rm -rf pkg2appimage.AppDir
-  rm -rf Shell-IDE*
+  rm -rf Psychy-IDE*
 fi
 
 cd "${CALLER_DIR}"

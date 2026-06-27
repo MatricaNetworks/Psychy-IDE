@@ -33,38 +33,38 @@
 + setpath product updateUrl https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master
 + local jsonTmp
 + [[ stable == \i\n\s\i\d\e\r ]]
-+ setpath product downloadUrl https://github.com/Shell-IDE/shell-ide/releases
++ setpath product downloadUrl https://github.com/Psychy-IDE/psychy-ide/releases
 + local jsonTmp
 + [[ stable == \i\n\s\i\d\e\r ]]
-+ setpath product nameShort Shell-IDE
++ setpath product nameShort Psychy-IDE
 + local jsonTmp
-+ setpath product nameLong Shell-IDE
++ setpath product nameLong Psychy-IDE
 + local jsonTmp
-+ setpath product applicationName shell-ide
++ setpath product applicationName psychy-ide
 + local jsonTmp
-+ setpath product linuxIconName shell-ide
++ setpath product linuxIconName psychy-ide
 + local jsonTmp
 + setpath product quality stable
 + local jsonTmp
-+ setpath product urlProtocol shell-ide
++ setpath product urlProtocol psychy-ide
 + local jsonTmp
-+ setpath product serverApplicationName shell-ide-server
++ setpath product serverApplicationName psychy-ide-server
 + local jsonTmp
-+ setpath product serverDataFolderName .shell-ide-server
++ setpath product serverDataFolderName .psychy-ide-server
 + local jsonTmp
-+ setpath product darwinBundleIdentifier com.shell-ide
++ setpath product darwinBundleIdentifier com.psychy-ide
 + local jsonTmp
 + setpath product win32AppUserModelId ShellIDE.ShellIDE
 + local jsonTmp
-+ setpath product win32DirName Shell-IDE
++ setpath product win32DirName Psychy-IDE
 + local jsonTmp
 + setpath product win32MutexName shellide
 + local jsonTmp
-+ setpath product win32NameVersion Shell-IDE
++ setpath product win32NameVersion Psychy-IDE
 + local jsonTmp
 + setpath product win32RegValueName ShellIDE
 + local jsonTmp
-+ setpath product win32ShellNameShort Shell-IDE
++ setpath product win32ShellNameShort Psychy-IDE
 + local jsonTmp
 + setpath product win32AppId '{{763CBF88-25C6-4B10-952F-326AE657F16B}'
 + local jsonTmp
@@ -78,11 +78,11 @@
 + local jsonTmp
 + setpath product win32arm64UserAppId '{{57FD70A5-1B8D-4875-9F40-C5553F094828}'
 + local jsonTmp
-+ setpath product tunnelApplicationName shell-ide-tunnel
++ setpath product tunnelApplicationName psychy-ide-tunnel
 + local jsonTmp
-+ setpath product win32TunnelServiceMutex shell-ide-tunnelservice
++ setpath product win32TunnelServiceMutex psychy-ide-tunnelservice
 + local jsonTmp
-+ setpath product win32TunnelMutex shell-ide-tunnel
++ setpath product win32TunnelMutex psychy-ide-tunnel
 + local jsonTmp
 + setpath product win32ContextMenu.x64.clsid D910D5E6-B277-4F4A-BDC5-759A34EEE25D
 + local jsonTmp
@@ -92,9 +92,9 @@
 + local jsonTmp
 ++ jq -s '.[0] * .[1]' product.json ../product.json
 + jsonTmp='{
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -103,28 +103,28 @@
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -256,7 +256,7 @@
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -873,9 +873,9 @@
   }
 }'
 + echo '{
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -884,28 +884,28 @@
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -1037,7 +1037,7 @@
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -1656,9 +1656,9 @@
 + unset jsonTmp
 + cat product.json
 {
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -1667,28 +1667,28 @@
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -1820,7 +1820,7 @@
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -2437,35 +2437,35 @@
   }
 }
 + . ../utils.sh
-++ APP_NAME=Shell-IDE
-++ APP_NAME_LC=shell-ide
+++ APP_NAME=Psychy-IDE
+++ APP_NAME_LC=psychy-ide
 ++ ASSETS_REPOSITORY=VSCodium/vscodium
-++ BINARY_NAME=shell-ide
+++ BINARY_NAME=psychy-ide
 ++ GH_REPO_PATH=VSCodium/vscodium
-++ ORG_NAME=Shell-IDE
-++ TUNNEL_APP_NAME=shell-ide-tunnel
+++ ORG_NAME=Psychy-IDE
+++ TUNNEL_APP_NAME=psychy-ide-tunnel
 ++ [[ stable == \i\n\s\i\d\e\r ]]
-++ GLOBAL_DIRNAME=shell-ide
+++ GLOBAL_DIRNAME=psychy-ide
 ++ exists gsed
 ++ type -t gsed
 ++ is_gnu_sed
 ++ sed --version
-+ echo 'APP_NAME="Shell-IDE"'
-APP_NAME="Shell-IDE"
-+ echo 'APP_NAME_LC="shell-ide"'
-APP_NAME_LC="shell-ide"
++ echo 'APP_NAME="Psychy-IDE"'
+APP_NAME="Psychy-IDE"
++ echo 'APP_NAME_LC="psychy-ide"'
+APP_NAME_LC="psychy-ide"
 + echo 'ASSETS_REPOSITORY="VSCodium/vscodium"'
 ASSETS_REPOSITORY="VSCodium/vscodium"
-+ echo 'BINARY_NAME="shell-ide"'
-BINARY_NAME="shell-ide"
++ echo 'BINARY_NAME="psychy-ide"'
+BINARY_NAME="psychy-ide"
 + echo 'GH_REPO_PATH="VSCodium/vscodium"'
 GH_REPO_PATH="VSCodium/vscodium"
-+ echo 'GLOBAL_DIRNAME="shell-ide"'
-GLOBAL_DIRNAME="shell-ide"
-+ echo 'ORG_NAME="Shell-IDE"'
-ORG_NAME="Shell-IDE"
-+ echo 'TUNNEL_APP_NAME="shell-ide-tunnel"'
-TUNNEL_APP_NAME="shell-ide-tunnel"
++ echo 'GLOBAL_DIRNAME="psychy-ide"'
+GLOBAL_DIRNAME="psychy-ide"
++ echo 'ORG_NAME="Psychy-IDE"'
+ORG_NAME="Psychy-IDE"
++ echo 'TUNNEL_APP_NAME="psychy-ide-tunnel"'
+TUNNEL_APP_NAME="psychy-ide-tunnel"
 + [[ '' == \y\e\s ]]
 + for file in ../patches/*.patch
 + [[ -f ../patches/add-remote-url.patch ]]
@@ -2474,42 +2474,42 @@ TUNNEL_APP_NAME="shell-ide-tunnel"
 + echo applying patch: ../patches/add-remote-url.patch
 applying patch: ../patches/add-remote-url.patch
 + cp ../patches/add-remote-url.patch ../patches/add-remote-url.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/add-remote-url.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/add-remote-url.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/add-remote-url.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/add-remote-url.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/add-remote-url.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/add-remote-url.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/add-remote-url.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/add-remote-url.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/add-remote-url.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/add-remote-url.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/add-remote-url.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/add-remote-url.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/add-remote-url.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/add-remote-url.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/add-remote-url.patch
 + git apply --ignore-whitespace ../patches/add-remote-url.patch
 + mv -f ../patches/add-remote-url.patch.bak ../patches/add-remote-url.patch
 + for file in ../patches/*.patch
@@ -2519,42 +2519,42 @@ applying patch: ../patches/add-remote-url.patch
 + echo applying patch: ../patches/binary-name.patch
 applying patch: ../patches/binary-name.patch
 + cp ../patches/binary-name.patch ../patches/binary-name.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/binary-name.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/binary-name.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/binary-name.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/binary-name.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/binary-name.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/binary-name.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/binary-name.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/binary-name.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/binary-name.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/binary-name.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/binary-name.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/binary-name.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/binary-name.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/binary-name.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/binary-name.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/binary-name.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/binary-name.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/binary-name.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/binary-name.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/binary-name.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/binary-name.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/binary-name.patch
 + git apply --ignore-whitespace ../patches/binary-name.patch
 + mv -f ../patches/binary-name.patch.bak ../patches/binary-name.patch
 + for file in ../patches/*.patch
@@ -2564,42 +2564,42 @@ applying patch: ../patches/binary-name.patch
 + echo applying patch: ../patches/brand.patch
 applying patch: ../patches/brand.patch
 + cp ../patches/brand.patch ../patches/brand.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/brand.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/brand.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/brand.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/brand.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/brand.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/brand.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/brand.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/brand.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/brand.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/brand.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/brand.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/brand.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/brand.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/brand.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/brand.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/brand.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/brand.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/brand.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/brand.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/brand.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/brand.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/brand.patch
 + git apply --ignore-whitespace ../patches/brand.patch
 + mv -f ../patches/brand.patch.bak ../patches/brand.patch
 + for file in ../patches/*.patch
@@ -2609,42 +2609,42 @@ applying patch: ../patches/brand.patch
 + echo applying patch: ../patches/cli.patch
 applying patch: ../patches/cli.patch
 + cp ../patches/cli.patch ../patches/cli.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/cli.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/cli.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/cli.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/cli.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/cli.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/cli.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/cli.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/cli.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/cli.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/cli.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/cli.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/cli.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/cli.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/cli.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/cli.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/cli.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/cli.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/cli.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/cli.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/cli.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/cli.patch
 + git apply --ignore-whitespace ../patches/cli.patch
 + mv -f ../patches/cli.patch.bak ../patches/cli.patch
 + for file in ../patches/*.patch
@@ -2654,42 +2654,42 @@ applying patch: ../patches/cli.patch
 + echo applying patch: ../patches/disable-cloud.patch
 applying patch: ../patches/disable-cloud.patch
 + cp ../patches/disable-cloud.patch ../patches/disable-cloud.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-cloud.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-cloud.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-cloud.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-cloud.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-cloud.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-cloud.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-cloud.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-cloud.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-cloud.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-cloud.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-cloud.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-cloud.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-cloud.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-cloud.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-cloud.patch
 + git apply --ignore-whitespace ../patches/disable-cloud.patch
 + mv -f ../patches/disable-cloud.patch.bak ../patches/disable-cloud.patch
 + for file in ../patches/*.patch
@@ -2699,42 +2699,42 @@ applying patch: ../patches/disable-cloud.patch
 + echo applying patch: ../patches/disable-copilot.patch
 applying patch: ../patches/disable-copilot.patch
 + cp ../patches/disable-copilot.patch ../patches/disable-copilot.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-copilot.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-copilot.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-copilot.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-copilot.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-copilot.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-copilot.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-copilot.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-copilot.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-copilot.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-copilot.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-copilot.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-copilot.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-copilot.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-copilot.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-copilot.patch
 + git apply --ignore-whitespace ../patches/disable-copilot.patch
 ../patches/disable-copilot.patch:72: space before tab in indent.
  		ChatContextKeys.panelParticipantRegistered,
@@ -2749,42 +2749,42 @@ warning: 2 lines add whitespace errors.
 + echo applying patch: ../patches/disable-missing-vsda.patch
 applying patch: ../patches/disable-missing-vsda.patch
 + cp ../patches/disable-missing-vsda.patch ../patches/disable-missing-vsda.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-missing-vsda.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-missing-vsda.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-missing-vsda.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-missing-vsda.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-missing-vsda.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-missing-vsda.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-missing-vsda.patch
 + git apply --ignore-whitespace ../patches/disable-missing-vsda.patch
 + mv -f ../patches/disable-missing-vsda.patch.bak ../patches/disable-missing-vsda.patch
 + for file in ../patches/*.patch
@@ -2794,42 +2794,42 @@ applying patch: ../patches/disable-missing-vsda.patch
 + echo applying patch: ../patches/disable-signature-verification.patch
 applying patch: ../patches/disable-signature-verification.patch
 + cp ../patches/disable-signature-verification.patch ../patches/disable-signature-verification.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-signature-verification.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-signature-verification.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-signature-verification.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-signature-verification.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-signature-verification.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-signature-verification.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-signature-verification.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-signature-verification.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-signature-verification.patch
 + git apply --ignore-whitespace ../patches/disable-signature-verification.patch
 + mv -f ../patches/disable-signature-verification.patch.bak ../patches/disable-signature-verification.patch
 + for file in ../patches/*.patch
@@ -2839,42 +2839,42 @@ applying patch: ../patches/disable-signature-verification.patch
 + echo applying patch: ../patches/disable-vscodedev.patch
 applying patch: ../patches/disable-vscodedev.patch
 + cp ../patches/disable-vscodedev.patch ../patches/disable-vscodedev.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-vscodedev.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/disable-vscodedev.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/disable-vscodedev.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/disable-vscodedev.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/disable-vscodedev.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-vscodedev.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-vscodedev.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/disable-vscodedev.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/disable-vscodedev.patch
 + git apply --ignore-whitespace ../patches/disable-vscodedev.patch
 + mv -f ../patches/disable-vscodedev.patch.bak ../patches/disable-vscodedev.patch
 + for file in ../patches/*.patch
@@ -2884,42 +2884,42 @@ applying patch: ../patches/disable-vscodedev.patch
 + echo applying patch: ../patches/extensions-disable-mangler.patch
 applying patch: ../patches/extensions-disable-mangler.patch
 + cp ../patches/extensions-disable-mangler.patch ../patches/extensions-disable-mangler.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/extensions-disable-mangler.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/extensions-disable-mangler.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/extensions-disable-mangler.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/extensions-disable-mangler.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/extensions-disable-mangler.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/extensions-disable-mangler.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/extensions-disable-mangler.patch
 + git apply --ignore-whitespace ../patches/extensions-disable-mangler.patch
 + mv -f ../patches/extensions-disable-mangler.patch.bak ../patches/extensions-disable-mangler.patch
 + for file in ../patches/*.patch
@@ -2929,42 +2929,42 @@ applying patch: ../patches/extensions-disable-mangler.patch
 + echo applying patch: ../patches/ext-from-gh.patch
 applying patch: ../patches/ext-from-gh.patch
 + cp ../patches/ext-from-gh.patch ../patches/ext-from-gh.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/ext-from-gh.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/ext-from-gh.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/ext-from-gh.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/ext-from-gh.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/ext-from-gh.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/ext-from-gh.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/ext-from-gh.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/ext-from-gh.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/ext-from-gh.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/ext-from-gh.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/ext-from-gh.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/ext-from-gh.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/ext-from-gh.patch
 + git apply --ignore-whitespace ../patches/ext-from-gh.patch
 + mv -f ../patches/ext-from-gh.patch.bak ../patches/ext-from-gh.patch
 + for file in ../patches/*.patch
@@ -2974,42 +2974,42 @@ applying patch: ../patches/ext-from-gh.patch
 + echo applying patch: ../patches/feat-announcements.patch
 applying patch: ../patches/feat-announcements.patch
 + cp ../patches/feat-announcements.patch ../patches/feat-announcements.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-announcements.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-announcements.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-announcements.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-announcements.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-announcements.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-announcements.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-announcements.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-announcements.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-announcements.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-announcements.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-announcements.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-announcements.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-announcements.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-announcements.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-announcements.patch
 + git apply --ignore-whitespace ../patches/feat-announcements.patch
 + mv -f ../patches/feat-announcements.patch.bak ../patches/feat-announcements.patch
 + for file in ../patches/*.patch
@@ -3019,42 +3019,42 @@ applying patch: ../patches/feat-announcements.patch
 + echo applying patch: ../patches/feat-command-filter.patch
 applying patch: ../patches/feat-command-filter.patch
 + cp ../patches/feat-command-filter.patch ../patches/feat-command-filter.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-command-filter.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-command-filter.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-command-filter.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-command-filter.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-command-filter.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-command-filter.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-command-filter.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-command-filter.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-command-filter.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-command-filter.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-command-filter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-command-filter.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-command-filter.patch
 + git apply --ignore-whitespace ../patches/feat-command-filter.patch
 + mv -f ../patches/feat-command-filter.patch.bak ../patches/feat-command-filter.patch
 + for file in ../patches/*.patch
@@ -3064,42 +3064,42 @@ applying patch: ../patches/feat-command-filter.patch
 + echo applying patch: ../patches/feat-ext-unsafe.patch
 applying patch: ../patches/feat-ext-unsafe.patch
 + cp ../patches/feat-ext-unsafe.patch ../patches/feat-ext-unsafe.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-ext-unsafe.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-ext-unsafe.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-ext-unsafe.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-ext-unsafe.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-ext-unsafe.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-ext-unsafe.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-ext-unsafe.patch
 + git apply --ignore-whitespace ../patches/feat-ext-unsafe.patch
 + mv -f ../patches/feat-ext-unsafe.patch.bak ../patches/feat-ext-unsafe.patch
 + for file in ../patches/*.patch
@@ -3109,42 +3109,42 @@ applying patch: ../patches/feat-ext-unsafe.patch
 + echo applying patch: ../patches/feat-user-product.patch
 applying patch: ../patches/feat-user-product.patch
 + cp ../patches/feat-user-product.patch ../patches/feat-user-product.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-user-product.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/feat-user-product.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/feat-user-product.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-user-product.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-user-product.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/feat-user-product.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-user-product.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-user-product.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-user-product.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/feat-user-product.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/feat-user-product.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-user-product.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-user-product.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/feat-user-product.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/feat-user-product.patch
 + git apply --ignore-whitespace ../patches/feat-user-product.patch
 + mv -f ../patches/feat-user-product.patch.bak ../patches/feat-user-product.patch
 + for file in ../patches/*.patch
@@ -3154,42 +3154,42 @@ applying patch: ../patches/feat-user-product.patch
 + echo applying patch: ../patches/fix-build-vsce.patch
 applying patch: ../patches/fix-build-vsce.patch
 + cp ../patches/fix-build-vsce.patch ../patches/fix-build-vsce.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-build-vsce.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-build-vsce.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-build-vsce.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-build-vsce.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-build-vsce.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-build-vsce.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-build-vsce.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-build-vsce.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-build-vsce.patch
 + git apply --ignore-whitespace ../patches/fix-build-vsce.patch
 + mv -f ../patches/fix-build-vsce.patch.bak ../patches/fix-build-vsce.patch
 + for file in ../patches/*.patch
@@ -3199,42 +3199,42 @@ applying patch: ../patches/fix-build-vsce.patch
 + echo applying patch: ../patches/fix-eol-banner.patch
 applying patch: ../patches/fix-eol-banner.patch
 + cp ../patches/fix-eol-banner.patch ../patches/fix-eol-banner.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-eol-banner.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-eol-banner.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-eol-banner.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-eol-banner.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-eol-banner.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-eol-banner.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-eol-banner.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-eol-banner.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-eol-banner.patch
 + git apply --ignore-whitespace ../patches/fix-eol-banner.patch
 + mv -f ../patches/fix-eol-banner.patch.bak ../patches/fix-eol-banner.patch
 + for file in ../patches/*.patch
@@ -3244,42 +3244,42 @@ applying patch: ../patches/fix-eol-banner.patch
 + echo applying patch: ../patches/fix-gallery.patch
 applying patch: ../patches/fix-gallery.patch
 + cp ../patches/fix-gallery.patch ../patches/fix-gallery.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-gallery.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-gallery.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-gallery.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-gallery.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-gallery.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-gallery.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-gallery.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-gallery.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-gallery.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-gallery.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-gallery.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-gallery.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-gallery.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-gallery.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-gallery.patch
 + git apply --ignore-whitespace ../patches/fix-gallery.patch
 + mv -f ../patches/fix-gallery.patch.bak ../patches/fix-gallery.patch
 + for file in ../patches/*.patch
@@ -3289,42 +3289,42 @@ applying patch: ../patches/fix-gallery.patch
 + echo applying patch: ../patches/fix-keymap.patch
 applying patch: ../patches/fix-keymap.patch
 + cp ../patches/fix-keymap.patch ../patches/fix-keymap.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-keymap.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-keymap.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-keymap.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-keymap.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-keymap.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-keymap.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-keymap.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-keymap.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-keymap.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-keymap.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-keymap.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-keymap.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-keymap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-keymap.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-keymap.patch
 + git apply --ignore-whitespace ../patches/fix-keymap.patch
 + mv -f ../patches/fix-keymap.patch.bak ../patches/fix-keymap.patch
 + for file in ../patches/*.patch
@@ -3334,42 +3334,42 @@ applying patch: ../patches/fix-keymap.patch
 + echo applying patch: ../patches/fix-npm-preinstall.patch
 applying patch: ../patches/fix-npm-preinstall.patch
 + cp ../patches/fix-npm-preinstall.patch ../patches/fix-npm-preinstall.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-npm-preinstall.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-npm-preinstall.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-npm-preinstall.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-npm-preinstall.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-npm-preinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-npm-preinstall.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-npm-preinstall.patch
 + git apply --ignore-whitespace ../patches/fix-npm-preinstall.patch
 + mv -f ../patches/fix-npm-preinstall.patch.bak ../patches/fix-npm-preinstall.patch
 + for file in ../patches/*.patch
@@ -3379,42 +3379,42 @@ applying patch: ../patches/fix-npm-preinstall.patch
 + echo applying patch: ../patches/fix-policies.patch
 applying patch: ../patches/fix-policies.patch
 + cp ../patches/fix-policies.patch ../patches/fix-policies.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-policies.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-policies.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-policies.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-policies.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-policies.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-policies.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-policies.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-policies.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-policies.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-policies.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-policies.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-policies.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-policies.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-policies.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-policies.patch
 + git apply --ignore-whitespace ../patches/fix-policies.patch
 + mv -f ../patches/fix-policies.patch.bak ../patches/fix-policies.patch
 + for file in ../patches/*.patch
@@ -3424,42 +3424,42 @@ applying patch: ../patches/fix-policies.patch
 + echo applying patch: ../patches/fix-remote-libs.patch
 applying patch: ../patches/fix-remote-libs.patch
 + cp ../patches/fix-remote-libs.patch ../patches/fix-remote-libs.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-remote-libs.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/fix-remote-libs.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/fix-remote-libs.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/fix-remote-libs.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/fix-remote-libs.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-remote-libs.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-remote-libs.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/fix-remote-libs.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/fix-remote-libs.patch
 + git apply --ignore-whitespace ../patches/fix-remote-libs.patch
 + mv -f ../patches/fix-remote-libs.patch.bak ../patches/fix-remote-libs.patch
 + for file in ../patches/*.patch
@@ -3469,42 +3469,42 @@ applying patch: ../patches/fix-remote-libs.patch
 + echo applying patch: ../patches/optional-tree-sitter.patch
 applying patch: ../patches/optional-tree-sitter.patch
 + cp ../patches/optional-tree-sitter.patch ../patches/optional-tree-sitter.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/optional-tree-sitter.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/optional-tree-sitter.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/optional-tree-sitter.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/optional-tree-sitter.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/optional-tree-sitter.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/optional-tree-sitter.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/optional-tree-sitter.patch
 + git apply --ignore-whitespace ../patches/optional-tree-sitter.patch
 + mv -f ../patches/optional-tree-sitter.patch.bak ../patches/optional-tree-sitter.patch
 + for file in ../patches/*.patch
@@ -3514,42 +3514,42 @@ applying patch: ../patches/optional-tree-sitter.patch
 + echo applying patch: ../patches/remove-mangle.patch
 applying patch: ../patches/remove-mangle.patch
 + cp ../patches/remove-mangle.patch ../patches/remove-mangle.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/remove-mangle.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/remove-mangle.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/remove-mangle.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/remove-mangle.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/remove-mangle.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/remove-mangle.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/remove-mangle.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/remove-mangle.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/remove-mangle.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/remove-mangle.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/remove-mangle.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/remove-mangle.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/remove-mangle.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/remove-mangle.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/remove-mangle.patch
 + git apply --ignore-whitespace ../patches/remove-mangle.patch
 + mv -f ../patches/remove-mangle.patch.bak ../patches/remove-mangle.patch
 + for file in ../patches/*.patch
@@ -3559,42 +3559,42 @@ applying patch: ../patches/remove-mangle.patch
 + echo applying patch: ../patches/report-issue.patch
 applying patch: ../patches/report-issue.patch
 + cp ../patches/report-issue.patch ../patches/report-issue.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/report-issue.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/report-issue.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/report-issue.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/report-issue.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/report-issue.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/report-issue.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/report-issue.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/report-issue.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/report-issue.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/report-issue.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/report-issue.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/report-issue.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/report-issue.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/report-issue.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/report-issue.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/report-issue.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/report-issue.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/report-issue.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/report-issue.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/report-issue.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/report-issue.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/report-issue.patch
 + git apply --ignore-whitespace ../patches/report-issue.patch
 + mv -f ../patches/report-issue.patch.bak ../patches/report-issue.patch
 + for file in ../patches/*.patch
@@ -3604,42 +3604,42 @@ applying patch: ../patches/report-issue.patch
 + echo applying patch: ../patches/sourcemaps.patch
 applying patch: ../patches/sourcemaps.patch
 + cp ../patches/sourcemaps.patch ../patches/sourcemaps.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/sourcemaps.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/sourcemaps.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/sourcemaps.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/sourcemaps.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/sourcemaps.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/sourcemaps.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/sourcemaps.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/sourcemaps.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/sourcemaps.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/sourcemaps.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/sourcemaps.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/sourcemaps.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/sourcemaps.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/sourcemaps.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/sourcemaps.patch
 + git apply --ignore-whitespace ../patches/sourcemaps.patch
 + mv -f ../patches/sourcemaps.patch.bak ../patches/sourcemaps.patch
 + for file in ../patches/*.patch
@@ -3649,42 +3649,42 @@ applying patch: ../patches/sourcemaps.patch
 + echo applying patch: ../patches/telemetry.patch
 applying patch: ../patches/telemetry.patch
 + cp ../patches/telemetry.patch ../patches/telemetry.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/telemetry.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/telemetry.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/telemetry.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/telemetry.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/telemetry.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/telemetry.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/telemetry.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/telemetry.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/telemetry.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/telemetry.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/telemetry.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/telemetry.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/telemetry.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/telemetry.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/telemetry.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/telemetry.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/telemetry.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/telemetry.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/telemetry.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/telemetry.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/telemetry.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/telemetry.patch
 + git apply --ignore-whitespace ../patches/telemetry.patch
 + mv -f ../patches/telemetry.patch.bak ../patches/telemetry.patch
 + for file in ../patches/*.patch
@@ -3694,42 +3694,42 @@ applying patch: ../patches/telemetry.patch
 + echo applying patch: ../patches/terminal-suggest.patch
 applying patch: ../patches/terminal-suggest.patch
 + cp ../patches/terminal-suggest.patch ../patches/terminal-suggest.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/terminal-suggest.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/terminal-suggest.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/terminal-suggest.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/terminal-suggest.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/terminal-suggest.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/terminal-suggest.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/terminal-suggest.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/terminal-suggest.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/terminal-suggest.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/terminal-suggest.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/terminal-suggest.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/terminal-suggest.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/terminal-suggest.patch
 + git apply --ignore-whitespace ../patches/terminal-suggest.patch
 + mv -f ../patches/terminal-suggest.patch.bak ../patches/terminal-suggest.patch
 + for file in ../patches/*.patch
@@ -3739,42 +3739,42 @@ applying patch: ../patches/terminal-suggest.patch
 + echo applying patch: ../patches/update-cache-path.patch
 applying patch: ../patches/update-cache-path.patch
 + cp ../patches/update-cache-path.patch ../patches/update-cache-path.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/update-cache-path.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/update-cache-path.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/update-cache-path.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-cache-path.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/update-cache-path.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/update-cache-path.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-cache-path.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-cache-path.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-cache-path.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/update-cache-path.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/update-cache-path.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/update-cache-path.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/update-cache-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/update-cache-path.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/update-cache-path.patch
 + git apply --ignore-whitespace ../patches/update-cache-path.patch
 + mv -f ../patches/update-cache-path.patch.bak ../patches/update-cache-path.patch
 + for file in ../patches/*.patch
@@ -3784,42 +3784,42 @@ applying patch: ../patches/update-cache-path.patch
 + echo applying patch: ../patches/update-electron.patch
 applying patch: ../patches/update-electron.patch
 + cp ../patches/update-electron.patch ../patches/update-electron.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/update-electron.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/update-electron.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-electron.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/update-electron.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-electron.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-electron.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-electron.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/update-electron.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/update-electron.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/update-electron.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-electron.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-electron.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-electron.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/update-electron.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-electron.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/update-electron.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/update-electron.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/update-electron.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/update-electron.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/update-electron.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/update-electron.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/update-electron.patch
 + git apply --ignore-whitespace ../patches/update-electron.patch
 + mv -f ../patches/update-electron.patch.bak ../patches/update-electron.patch
 + for file in ../patches/*.patch
@@ -3829,42 +3829,42 @@ applying patch: ../patches/update-electron.patch
 + echo applying patch: ../patches/use-github-pat.patch
 applying patch: ../patches/use-github-pat.patch
 + cp ../patches/use-github-pat.patch ../patches/use-github-pat.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/use-github-pat.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/use-github-pat.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/use-github-pat.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/use-github-pat.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/use-github-pat.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/use-github-pat.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/use-github-pat.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/use-github-pat.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/use-github-pat.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/use-github-pat.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/use-github-pat.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/use-github-pat.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/use-github-pat.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/use-github-pat.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/use-github-pat.patch
 + git apply --ignore-whitespace ../patches/use-github-pat.patch
 + mv -f ../patches/use-github-pat.patch.bak ../patches/use-github-pat.patch
 + for file in ../patches/*.patch
@@ -3874,42 +3874,42 @@ applying patch: ../patches/use-github-pat.patch
 + echo applying patch: ../patches/version-0-release.patch
 applying patch: ../patches/version-0-release.patch
 + cp ../patches/version-0-release.patch ../patches/version-0-release.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/version-0-release.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/version-0-release.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/version-0-release.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-0-release.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/version-0-release.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/version-0-release.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-0-release.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-0-release.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-0-release.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/version-0-release.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/version-0-release.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/version-0-release.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/version-0-release.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/version-0-release.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/version-0-release.patch
 + git apply --ignore-whitespace ../patches/version-0-release.patch
 + mv -f ../patches/version-0-release.patch.bak ../patches/version-0-release.patch
 + for file in ../patches/*.patch
@@ -3919,42 +3919,42 @@ applying patch: ../patches/version-0-release.patch
 + echo applying patch: ../patches/version-1-update.patch
 applying patch: ../patches/version-1-update.patch
 + cp ../patches/version-1-update.patch ../patches/version-1-update.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/version-1-update.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/version-1-update.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/version-1-update.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-1-update.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/version-1-update.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/version-1-update.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-1-update.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-1-update.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-1-update.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/version-1-update.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/version-1-update.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/version-1-update.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/version-1-update.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/version-1-update.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/version-1-update.patch
 + git apply --ignore-whitespace ../patches/version-1-update.patch
 + mv -f ../patches/version-1-update.patch.bak ../patches/version-1-update.patch
 + [[ stable == \i\n\s\i\d\e\r ]]
@@ -3966,42 +3966,42 @@ applying patch: ../patches/version-1-update.patch
 + echo applying patch: ../patches/linux/arch-0-support.patch
 applying patch: ../patches/linux/arch-0-support.patch
 + cp ../patches/linux/arch-0-support.patch ../patches/linux/arch-0-support.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-0-support.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-0-support.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-0-support.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-0-support.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-0-support.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-0-support.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-0-support.patch
 + git apply --ignore-whitespace ../patches/linux/arch-0-support.patch
 + mv -f ../patches/linux/arch-0-support.patch.bak ../patches/linux/arch-0-support.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4011,42 +4011,42 @@ applying patch: ../patches/linux/arch-0-support.patch
 + echo applying patch: ../patches/linux/arch-1-ppc64le.patch
 applying patch: ../patches/linux/arch-1-ppc64le.patch
 + cp ../patches/linux/arch-1-ppc64le.patch ../patches/linux/arch-1-ppc64le.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-1-ppc64le.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-1-ppc64le.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-1-ppc64le.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-1-ppc64le.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-1-ppc64le.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-1-ppc64le.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-1-ppc64le.patch
 + git apply --ignore-whitespace ../patches/linux/arch-1-ppc64le.patch
 + mv -f ../patches/linux/arch-1-ppc64le.patch.bak ../patches/linux/arch-1-ppc64le.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4056,42 +4056,42 @@ applying patch: ../patches/linux/arch-1-ppc64le.patch
 + echo applying patch: ../patches/linux/arch-2-riscv64.patch
 applying patch: ../patches/linux/arch-2-riscv64.patch
 + cp ../patches/linux/arch-2-riscv64.patch ../patches/linux/arch-2-riscv64.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-2-riscv64.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-2-riscv64.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-2-riscv64.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-2-riscv64.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-2-riscv64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-2-riscv64.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-2-riscv64.patch
 + git apply --ignore-whitespace ../patches/linux/arch-2-riscv64.patch
 + mv -f ../patches/linux/arch-2-riscv64.patch.bak ../patches/linux/arch-2-riscv64.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4101,42 +4101,42 @@ applying patch: ../patches/linux/arch-2-riscv64.patch
 + echo applying patch: ../patches/linux/arch-3-loong64.patch
 applying patch: ../patches/linux/arch-3-loong64.patch
 + cp ../patches/linux/arch-3-loong64.patch ../patches/linux/arch-3-loong64.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-3-loong64.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-3-loong64.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-3-loong64.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-3-loong64.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-3-loong64.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-3-loong64.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-3-loong64.patch
 + git apply --ignore-whitespace ../patches/linux/arch-3-loong64.patch
 + mv -f ../patches/linux/arch-3-loong64.patch.bak ../patches/linux/arch-3-loong64.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4146,42 +4146,42 @@ applying patch: ../patches/linux/arch-3-loong64.patch
 + echo applying patch: ../patches/linux/arch-4-s390x.patch
 applying patch: ../patches/linux/arch-4-s390x.patch
 + cp ../patches/linux/arch-4-s390x.patch ../patches/linux/arch-4-s390x.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/arch-4-s390x.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/arch-4-s390x.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/arch-4-s390x.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-4-s390x.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-4-s390x.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/arch-4-s390x.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/arch-4-s390x.patch
 + git apply --ignore-whitespace ../patches/linux/arch-4-s390x.patch
 + mv -f ../patches/linux/arch-4-s390x.patch.bak ../patches/linux/arch-4-s390x.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4191,42 +4191,42 @@ applying patch: ../patches/linux/arch-4-s390x.patch
 + echo applying patch: ../patches/linux/cli.patch
 applying patch: ../patches/linux/cli.patch
 + cp ../patches/linux/cli.patch ../patches/linux/cli.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/cli.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/cli.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/cli.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/cli.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/cli.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/cli.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/cli.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/cli.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/cli.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/cli.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/cli.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/cli.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/cli.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/cli.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/cli.patch
 + git apply --ignore-whitespace ../patches/linux/cli.patch
 + mv -f ../patches/linux/cli.patch.bak ../patches/linux/cli.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4236,42 +4236,42 @@ applying patch: ../patches/linux/cli.patch
 + echo applying patch: ../patches/linux/feat-logs-home.patch
 applying patch: ../patches/linux/feat-logs-home.patch
 + cp ../patches/linux/feat-logs-home.patch ../patches/linux/feat-logs-home.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/feat-logs-home.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/feat-logs-home.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/feat-logs-home.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/feat-logs-home.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/feat-logs-home.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/feat-logs-home.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/feat-logs-home.patch
 + git apply --ignore-whitespace ../patches/linux/feat-logs-home.patch
 + mv -f ../patches/linux/feat-logs-home.patch.bak ../patches/linux/feat-logs-home.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4281,42 +4281,42 @@ applying patch: ../patches/linux/feat-logs-home.patch
 + echo applying patch: ../patches/linux/fix-build.patch
 applying patch: ../patches/linux/fix-build.patch
 + cp ../patches/linux/fix-build.patch ../patches/linux/fix-build.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-build.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-build.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-build.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-build.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-build.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-build.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-build.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-build.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-build.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-build.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-build.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-build.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-build.patch
 + git apply --ignore-whitespace ../patches/linux/fix-build.patch
 + mv -f ../patches/linux/fix-build.patch.bak ../patches/linux/fix-build.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4326,42 +4326,42 @@ applying patch: ../patches/linux/fix-build.patch
 + echo applying patch: ../patches/linux/fix-global-policy.patch
 applying patch: ../patches/linux/fix-global-policy.patch
 + cp ../patches/linux/fix-global-policy.patch ../patches/linux/fix-global-policy.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-global-policy.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-global-policy.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-global-policy.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-global-policy.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-global-policy.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-global-policy.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-global-policy.patch
 + git apply --ignore-whitespace ../patches/linux/fix-global-policy.patch
 + mv -f ../patches/linux/fix-global-policy.patch.bak ../patches/linux/fix-global-policy.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4371,42 +4371,42 @@ applying patch: ../patches/linux/fix-global-policy.patch
 + echo applying patch: ../patches/linux/fix-npm-postinstall.patch
 applying patch: ../patches/linux/fix-npm-postinstall.patch
 + cp ../patches/linux/fix-npm-postinstall.patch ../patches/linux/fix-npm-postinstall.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-npm-postinstall.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-npm-postinstall.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-npm-postinstall.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-npm-postinstall.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-npm-postinstall.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-npm-postinstall.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-npm-postinstall.patch
 + git apply --ignore-whitespace ../patches/linux/fix-npm-postinstall.patch
 ../patches/linux/fix-npm-postinstall.patch:13: space before tab in indent.
  		}
@@ -4419,42 +4419,42 @@ warning: 1 line adds whitespace errors.
 + echo applying patch: ../patches/linux/fix-reh-bootstrap.patch
 applying patch: ../patches/linux/fix-reh-bootstrap.patch
 + cp ../patches/linux/fix-reh-bootstrap.patch ../patches/linux/fix-reh-bootstrap.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/fix-reh-bootstrap.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/fix-reh-bootstrap.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-reh-bootstrap.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-reh-bootstrap.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/fix-reh-bootstrap.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/fix-reh-bootstrap.patch
 + git apply --ignore-whitespace ../patches/linux/fix-reh-bootstrap.patch
 + mv -f ../patches/linux/fix-reh-bootstrap.patch.bak ../patches/linux/fix-reh-bootstrap.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4464,42 +4464,42 @@ applying patch: ../patches/linux/fix-reh-bootstrap.patch
 + echo applying patch: ../patches/linux/rpm.patch
 applying patch: ../patches/linux/rpm.patch
 + cp ../patches/linux/rpm.patch ../patches/linux/rpm.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/rpm.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/rpm.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/rpm.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/rpm.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/rpm.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/rpm.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/rpm.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/rpm.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/rpm.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/rpm.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/rpm.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/rpm.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/rpm.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/rpm.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/rpm.patch
 + git apply --ignore-whitespace ../patches/linux/rpm.patch
 + mv -f ../patches/linux/rpm.patch.bak ../patches/linux/rpm.patch
 + for file in "../patches/${OS_NAME}/"*.patch
@@ -4509,42 +4509,42 @@ applying patch: ../patches/linux/rpm.patch
 + echo applying patch: ../patches/linux/update-xdg-path.patch
 applying patch: ../patches/linux/update-xdg-path.patch
 + cp ../patches/linux/update-xdg-path.patch ../patches/linux/update-xdg-path.patch.bak
-+ replace 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME!!|Shell-IDE|g' ../patches/linux/update-xdg-path.patch
-+ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!APP_NAME!!|Psychy-IDE|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 + replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
-+ replace 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!BINARY_NAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!BINARY_NAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 + replace 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
-+ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
-+ replace 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!ORG_NAME!!|Shell-IDE|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!ORG_NAME!!|Psychy-IDE|g' ../patches/linux/update-xdg-path.patch
 + replace 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
 + sed -i -E 's|!!RELEASE_VERSION!!|1.107.10139|g' ../patches/linux/update-xdg-path.patch
-+ replace 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/update-xdg-path.patch
++ replace 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/update-xdg-path.patch
 + is_gnu_sed
 + sed --version
-+ sed -i -E 's|!!TUNNEL_APP_NAME!!|shell-ide-tunnel|g' ../patches/linux/update-xdg-path.patch
++ sed -i -E 's|!!TUNNEL_APP_NAME!!|psychy-ide-tunnel|g' ../patches/linux/update-xdg-path.patch
 + git apply --ignore-whitespace ../patches/linux/update-xdg-path.patch
 + mv -f ../patches/linux/update-xdg-path.patch.bak ../patches/linux/update-xdg-path.patch
 + for file in ../patches/user/*.patch

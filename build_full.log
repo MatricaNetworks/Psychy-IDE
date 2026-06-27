@@ -71,38 +71,38 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
 +++ setpath product updateUrl https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master
 +++ local jsonTmp
 +++ [[ stable == \i\n\s\i\d\e\r ]]
-+++ setpath product downloadUrl https://github.com/Shell-IDE/shell-ide/releases
++++ setpath product downloadUrl https://github.com/Psychy-IDE/psychy-ide/releases
 +++ local jsonTmp
 +++ [[ stable == \i\n\s\i\d\e\r ]]
-+++ setpath product nameShort Shell-IDE
++++ setpath product nameShort Psychy-IDE
 +++ local jsonTmp
-+++ setpath product nameLong Shell-IDE
++++ setpath product nameLong Psychy-IDE
 +++ local jsonTmp
-+++ setpath product applicationName shell-ide
++++ setpath product applicationName psychy-ide
 +++ local jsonTmp
-+++ setpath product linuxIconName shell-ide
++++ setpath product linuxIconName psychy-ide
 +++ local jsonTmp
 +++ setpath product quality stable
 +++ local jsonTmp
-+++ setpath product urlProtocol shell-ide
++++ setpath product urlProtocol psychy-ide
 +++ local jsonTmp
-+++ setpath product serverApplicationName shell-ide-server
++++ setpath product serverApplicationName psychy-ide-server
 +++ local jsonTmp
-+++ setpath product serverDataFolderName .shell-ide-server
++++ setpath product serverDataFolderName .psychy-ide-server
 +++ local jsonTmp
-+++ setpath product darwinBundleIdentifier com.shell-ide
++++ setpath product darwinBundleIdentifier com.psychy-ide
 +++ local jsonTmp
 +++ setpath product win32AppUserModelId ShellIDE.ShellIDE
 +++ local jsonTmp
-+++ setpath product win32DirName Shell-IDE
++++ setpath product win32DirName Psychy-IDE
 +++ local jsonTmp
 +++ setpath product win32MutexName shellide
 +++ local jsonTmp
-+++ setpath product win32NameVersion Shell-IDE
++++ setpath product win32NameVersion Psychy-IDE
 +++ local jsonTmp
 +++ setpath product win32RegValueName ShellIDE
 +++ local jsonTmp
-+++ setpath product win32ShellNameShort Shell-IDE
++++ setpath product win32ShellNameShort Psychy-IDE
 +++ local jsonTmp
 +++ setpath product win32AppId '{{763CBF88-25C6-4B10-952F-326AE657F16B}'
 +++ local jsonTmp
@@ -116,11 +116,11 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
 +++ local jsonTmp
 +++ setpath product win32arm64UserAppId '{{57FD70A5-1B8D-4875-9F40-C5553F094828}'
 +++ local jsonTmp
-+++ setpath product tunnelApplicationName shell-ide-tunnel
++++ setpath product tunnelApplicationName psychy-ide-tunnel
 +++ local jsonTmp
-+++ setpath product win32TunnelServiceMutex shell-ide-tunnelservice
++++ setpath product win32TunnelServiceMutex psychy-ide-tunnelservice
 +++ local jsonTmp
-+++ setpath product win32TunnelMutex shell-ide-tunnel
++++ setpath product win32TunnelMutex psychy-ide-tunnel
 +++ local jsonTmp
 +++ setpath product win32ContextMenu.x64.clsid D910D5E6-B277-4F4A-BDC5-759A34EEE25D
 +++ local jsonTmp
@@ -130,9 +130,9 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
 +++ local jsonTmp
 ++++ jq -s '.[0] * .[1]' product.json ../product.json
 +++ jsonTmp='{
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -141,28 +141,28 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -294,7 +294,7 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -911,9 +911,9 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   }
 }'
 +++ echo '{
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -922,28 +922,28 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -1075,7 +1075,7 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -1694,9 +1694,9 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
 +++ unset jsonTmp
 +++ cat product.json
 {
-  "nameShort": "Shell-IDE",
-  "nameLong": "Shell-IDE",
-  "applicationName": "shell-ide",
+  "nameShort": "Psychy-IDE",
+  "nameLong": "Psychy-IDE",
+  "applicationName": "psychy-ide",
   "dataFolderName": ".vscode-oss",
   "win32MutexName": "shellide",
   "licenseName": "MIT",
@@ -1705,28 +1705,28 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "serverGreeting": [],
   "serverLicense": [],
   "serverLicensePrompt": "",
-  "serverApplicationName": "shell-ide-server",
-  "serverDataFolderName": ".shell-ide-server",
-  "tunnelApplicationName": "shell-ide-tunnel",
-  "win32DirName": "Shell-IDE",
-  "win32NameVersion": "Shell-IDE",
+  "serverApplicationName": "psychy-ide-server",
+  "serverDataFolderName": ".psychy-ide-server",
+  "tunnelApplicationName": "psychy-ide-tunnel",
+  "win32DirName": "Psychy-IDE",
+  "win32NameVersion": "Psychy-IDE",
   "win32RegValueName": "ShellIDE",
   "win32x64AppId": "{{88DA3577-054F-4CA1-8122-7D820494CFFB}",
   "win32arm64AppId": "{{67DEE444-3D04-4258-B92A-BC1F0FF2CAE4}",
   "win32x64UserAppId": "{{2E1F05D1-C245-4562-81EE-28188DB6FD17}",
   "win32arm64UserAppId": "{{57FD70A5-1B8D-4875-9F40-C5553F094828}",
   "win32AppUserModelId": "ShellIDE.ShellIDE",
-  "win32ShellNameShort": "Shell-IDE",
-  "win32TunnelServiceMutex": "shell-ide-tunnelservice",
-  "win32TunnelMutex": "shell-ide-tunnel",
-  "darwinBundleIdentifier": "com.shell-ide",
+  "win32ShellNameShort": "Psychy-IDE",
+  "win32TunnelServiceMutex": "psychy-ide-tunnelservice",
+  "win32TunnelMutex": "psychy-ide-tunnel",
+  "darwinBundleIdentifier": "com.psychy-ide",
   "darwinProfileUUID": "47827DD9-4734-49A0-AF80-7E19B11495CC",
   "darwinProfilePayloadUUID": "CF808BE7-53F3-46C6-A7E2-7EDB98A5E959",
-  "linuxIconName": "shell-ide",
+  "linuxIconName": "psychy-ide",
   "licenseFileName": "LICENSE.txt",
   "reportIssueUrl": "https://github.com/VSCodium/vscodium/issues/new",
   "nodejsRepository": "https://nodejs.org",
-  "urlProtocol": "shell-ide",
+  "urlProtocol": "psychy-ide",
   "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
   "builtInExtensions": [
     {
@@ -1858,7 +1858,7 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
   "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
   "twitterUrl": "https://go.microsoft.com/fwlink/?LinkID=533687",
   "updateUrl": "https://raw.githubusercontent.com/VSCodium/versions/refs/heads/master",
-  "downloadUrl": "https://github.com/Shell-IDE/shell-ide/releases",
+  "downloadUrl": "https://github.com/Psychy-IDE/psychy-ide/releases",
   "quality": "stable",
   "win32AppId": "{{763CBF88-25C6-4B10-952F-326AE657F16B}",
   "win32UserAppId": "{{0FD05EB4-651E-4E78-A062-515204B47A3A}",
@@ -2476,30 +2476,30 @@ MS_COMMIT="994fd12f8d3a5aa16f17d42c041e5809167e845a"
 }
 +++ . ../utils.sh
 ++++ APP_NAME=VSCodium
-++++ APP_NAME_LC=shell-ide
+++++ APP_NAME_LC=psychy-ide
 ++++ ASSETS_REPOSITORY=VSCodium/vscodium
 ++++ BINARY_NAME=codium
 ++++ GH_REPO_PATH=VSCodium/vscodium
 ++++ ORG_NAME=VSCodium
 ++++ TUNNEL_APP_NAME=codium-tunnel
 ++++ [[ stable == \i\n\s\i\d\e\r ]]
-++++ GLOBAL_DIRNAME=shell-ide
+++++ GLOBAL_DIRNAME=psychy-ide
 ++++ exists gsed
 ++++ type -t gsed
 ++++ is_gnu_sed
 ++++ sed --version
 +++ echo 'APP_NAME="VSCodium"'
 APP_NAME="VSCodium"
-+++ echo 'APP_NAME_LC="shell-ide"'
-APP_NAME_LC="shell-ide"
++++ echo 'APP_NAME_LC="psychy-ide"'
+APP_NAME_LC="psychy-ide"
 +++ echo 'ASSETS_REPOSITORY="VSCodium/vscodium"'
 ASSETS_REPOSITORY="VSCodium/vscodium"
 +++ echo 'BINARY_NAME="codium"'
 BINARY_NAME="codium"
 +++ echo 'GH_REPO_PATH="VSCodium/vscodium"'
 GH_REPO_PATH="VSCodium/vscodium"
-+++ echo 'GLOBAL_DIRNAME="shell-ide"'
-GLOBAL_DIRNAME="shell-ide"
++++ echo 'GLOBAL_DIRNAME="psychy-ide"'
+GLOBAL_DIRNAME="psychy-ide"
 +++ echo 'ORG_NAME="VSCodium"'
 ORG_NAME="VSCodium"
 +++ echo 'TUNNEL_APP_NAME="codium-tunnel"'
@@ -2516,10 +2516,10 @@ applying patch: ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/add-remote-url.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/add-remote-url.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/add-remote-url.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/add-remote-url.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2532,10 +2532,10 @@ applying patch: ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/add-remote-url.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/add-remote-url.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/add-remote-url.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/add-remote-url.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/add-remote-url.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2561,10 +2561,10 @@ applying patch: ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/binary-name.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/binary-name.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/binary-name.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/binary-name.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2577,10 +2577,10 @@ applying patch: ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/binary-name.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/binary-name.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/binary-name.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/binary-name.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/binary-name.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2606,10 +2606,10 @@ applying patch: ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/brand.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/brand.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/brand.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/brand.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2622,10 +2622,10 @@ applying patch: ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/brand.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/brand.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/brand.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/brand.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/brand.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2651,10 +2651,10 @@ applying patch: ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/cli.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/cli.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/cli.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/cli.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2667,10 +2667,10 @@ applying patch: ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/cli.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/cli.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/cli.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/cli.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/cli.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2696,10 +2696,10 @@ applying patch: ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/disable-cloud.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-cloud.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-cloud.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-cloud.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2712,10 +2712,10 @@ applying patch: ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-cloud.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-cloud.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-cloud.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-cloud.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/disable-cloud.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2741,10 +2741,10 @@ applying patch: ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/disable-copilot.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-copilot.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-copilot.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-copilot.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2757,10 +2757,10 @@ applying patch: ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-copilot.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-copilot.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-copilot.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-copilot.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/disable-copilot.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2791,10 +2791,10 @@ applying patch: ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/disable-missing-vsda.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2807,10 +2807,10 @@ applying patch: ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-missing-vsda.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-missing-vsda.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-missing-vsda.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/disable-missing-vsda.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2836,10 +2836,10 @@ applying patch: ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/disable-signature-verification.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-signature-verification.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-signature-verification.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2852,10 +2852,10 @@ applying patch: ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-signature-verification.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-signature-verification.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-signature-verification.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/disable-signature-verification.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2881,10 +2881,10 @@ applying patch: ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/disable-vscodedev.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-vscodedev.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/disable-vscodedev.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2897,10 +2897,10 @@ applying patch: ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/disable-vscodedev.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/disable-vscodedev.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/disable-vscodedev.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/disable-vscodedev.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2926,10 +2926,10 @@ applying patch: ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/extensions-disable-mangler.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2942,10 +2942,10 @@ applying patch: ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/extensions-disable-mangler.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/extensions-disable-mangler.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/extensions-disable-mangler.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/extensions-disable-mangler.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2971,10 +2971,10 @@ applying patch: ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/ext-from-gh.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/ext-from-gh.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/ext-from-gh.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/ext-from-gh.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -2987,10 +2987,10 @@ applying patch: ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/ext-from-gh.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/ext-from-gh.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/ext-from-gh.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/ext-from-gh.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/ext-from-gh.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3016,10 +3016,10 @@ applying patch: ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/feat-announcements.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-announcements.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-announcements.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-announcements.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3032,10 +3032,10 @@ applying patch: ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-announcements.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-announcements.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-announcements.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-announcements.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/feat-announcements.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3061,10 +3061,10 @@ applying patch: ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/feat-command-filter.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-command-filter.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-command-filter.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-command-filter.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3077,10 +3077,10 @@ applying patch: ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-command-filter.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-command-filter.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-command-filter.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-command-filter.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/feat-command-filter.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3106,10 +3106,10 @@ applying patch: ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/feat-ext-unsafe.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3122,10 +3122,10 @@ applying patch: ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-ext-unsafe.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-ext-unsafe.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-ext-unsafe.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/feat-ext-unsafe.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3151,10 +3151,10 @@ applying patch: ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/feat-user-product.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-user-product.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/feat-user-product.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/feat-user-product.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3167,10 +3167,10 @@ applying patch: ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/feat-user-product.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-user-product.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/feat-user-product.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/feat-user-product.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/feat-user-product.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3196,10 +3196,10 @@ applying patch: ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-build-vsce.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-build-vsce.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-build-vsce.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3212,10 +3212,10 @@ applying patch: ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-build-vsce.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-build-vsce.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-build-vsce.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-build-vsce.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3241,10 +3241,10 @@ applying patch: ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-eol-banner.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-eol-banner.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-eol-banner.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3257,10 +3257,10 @@ applying patch: ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-eol-banner.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-eol-banner.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-eol-banner.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-eol-banner.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3286,10 +3286,10 @@ applying patch: ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-gallery.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-gallery.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-gallery.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-gallery.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3302,10 +3302,10 @@ applying patch: ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-gallery.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-gallery.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-gallery.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-gallery.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-gallery.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3331,10 +3331,10 @@ applying patch: ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-keymap.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-keymap.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-keymap.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-keymap.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3347,10 +3347,10 @@ applying patch: ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-keymap.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-keymap.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-keymap.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-keymap.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-keymap.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3376,10 +3376,10 @@ applying patch: ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-npm-preinstall.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3392,10 +3392,10 @@ applying patch: ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-npm-preinstall.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-npm-preinstall.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-npm-preinstall.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-npm-preinstall.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3421,10 +3421,10 @@ applying patch: ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-policies.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-policies.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-policies.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-policies.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3437,10 +3437,10 @@ applying patch: ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-policies.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-policies.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-policies.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-policies.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-policies.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3466,10 +3466,10 @@ applying patch: ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/fix-remote-libs.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-remote-libs.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/fix-remote-libs.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3482,10 +3482,10 @@ applying patch: ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/fix-remote-libs.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/fix-remote-libs.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/fix-remote-libs.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/fix-remote-libs.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3511,10 +3511,10 @@ applying patch: ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/optional-tree-sitter.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3527,10 +3527,10 @@ applying patch: ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/optional-tree-sitter.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/optional-tree-sitter.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/optional-tree-sitter.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/optional-tree-sitter.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3556,10 +3556,10 @@ applying patch: ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/remove-mangle.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/remove-mangle.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/remove-mangle.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/remove-mangle.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3572,10 +3572,10 @@ applying patch: ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/remove-mangle.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/remove-mangle.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/remove-mangle.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/remove-mangle.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/remove-mangle.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3601,10 +3601,10 @@ applying patch: ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/report-issue.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/report-issue.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/report-issue.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/report-issue.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3617,10 +3617,10 @@ applying patch: ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/report-issue.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/report-issue.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/report-issue.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/report-issue.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/report-issue.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3646,10 +3646,10 @@ applying patch: ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/sourcemaps.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/sourcemaps.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/sourcemaps.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/sourcemaps.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3662,10 +3662,10 @@ applying patch: ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/sourcemaps.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/sourcemaps.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/sourcemaps.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/sourcemaps.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/sourcemaps.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3691,10 +3691,10 @@ applying patch: ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/telemetry.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/telemetry.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/telemetry.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/telemetry.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3707,10 +3707,10 @@ applying patch: ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/telemetry.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/telemetry.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/telemetry.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/telemetry.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/telemetry.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3736,10 +3736,10 @@ applying patch: ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/terminal-suggest.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/terminal-suggest.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/terminal-suggest.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/terminal-suggest.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3752,10 +3752,10 @@ applying patch: ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/terminal-suggest.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/terminal-suggest.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/terminal-suggest.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/terminal-suggest.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/terminal-suggest.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3781,10 +3781,10 @@ applying patch: ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/update-cache-path.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-cache-path.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-cache-path.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-cache-path.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3797,10 +3797,10 @@ applying patch: ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-cache-path.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-cache-path.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-cache-path.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-cache-path.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/update-cache-path.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3826,10 +3826,10 @@ applying patch: ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/update-electron.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-electron.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/update-electron.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/update-electron.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3842,10 +3842,10 @@ applying patch: ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/update-electron.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-electron.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/update-electron.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/update-electron.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/update-electron.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3871,10 +3871,10 @@ applying patch: ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/use-github-pat.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/use-github-pat.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/use-github-pat.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/use-github-pat.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3887,10 +3887,10 @@ applying patch: ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/use-github-pat.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/use-github-pat.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/use-github-pat.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/use-github-pat.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/use-github-pat.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3916,10 +3916,10 @@ applying patch: ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/version-0-release.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-0-release.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-0-release.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-0-release.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3932,10 +3932,10 @@ applying patch: ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-0-release.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-0-release.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-0-release.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-0-release.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/version-0-release.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3961,10 +3961,10 @@ applying patch: ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/version-1-update.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-1-update.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/version-1-update.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/version-1-update.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -3977,10 +3977,10 @@ applying patch: ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/version-1-update.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-1-update.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/version-1-update.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/version-1-update.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/version-1-update.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4008,10 +4008,10 @@ applying patch: ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/arch-0-support.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4024,10 +4024,10 @@ applying patch: ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-0-support.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-0-support.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-0-support.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/arch-0-support.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4053,10 +4053,10 @@ applying patch: ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/arch-1-ppc64le.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4069,10 +4069,10 @@ applying patch: ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-1-ppc64le.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-1-ppc64le.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-1-ppc64le.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/arch-1-ppc64le.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4098,10 +4098,10 @@ applying patch: ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/arch-2-riscv64.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4114,10 +4114,10 @@ applying patch: ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-2-riscv64.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-2-riscv64.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-2-riscv64.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/arch-2-riscv64.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4143,10 +4143,10 @@ applying patch: ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/arch-3-loong64.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4159,10 +4159,10 @@ applying patch: ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-3-loong64.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-3-loong64.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-3-loong64.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/arch-3-loong64.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4188,10 +4188,10 @@ applying patch: ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/arch-4-s390x.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4204,10 +4204,10 @@ applying patch: ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/arch-4-s390x.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/arch-4-s390x.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/arch-4-s390x.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/arch-4-s390x.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4233,10 +4233,10 @@ applying patch: ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/cli.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/cli.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/cli.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/cli.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4249,10 +4249,10 @@ applying patch: ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/cli.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/cli.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/cli.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/cli.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/cli.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4278,10 +4278,10 @@ applying patch: ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/feat-logs-home.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4294,10 +4294,10 @@ applying patch: ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/feat-logs-home.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/feat-logs-home.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/feat-logs-home.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/feat-logs-home.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4323,10 +4323,10 @@ applying patch: ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/fix-build.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-build.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-build.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-build.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4339,10 +4339,10 @@ applying patch: ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-build.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-build.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-build.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-build.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/fix-build.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4368,10 +4368,10 @@ applying patch: ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/fix-global-policy.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4384,10 +4384,10 @@ applying patch: ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-global-policy.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-global-policy.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-global-policy.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/fix-global-policy.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4413,10 +4413,10 @@ applying patch: ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/fix-npm-postinstall.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4429,10 +4429,10 @@ applying patch: ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-npm-postinstall.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-npm-postinstall.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-npm-postinstall.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/fix-npm-postinstall.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4461,10 +4461,10 @@ applying patch: ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/fix-reh-bootstrap.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4477,10 +4477,10 @@ applying patch: ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/fix-reh-bootstrap.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/fix-reh-bootstrap.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/fix-reh-bootstrap.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4506,10 +4506,10 @@ applying patch: ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/rpm.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/rpm.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/rpm.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/rpm.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4522,10 +4522,10 @@ applying patch: ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/rpm.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/rpm.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/rpm.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/rpm.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/rpm.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4551,10 +4551,10 @@ applying patch: ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!APP_NAME!!|VSCodium|g' ../patches/linux/update-xdg-path.patch
-+++ replace 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++++ replace 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!APP_NAME_LC!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++++ sed -i -E 's|!!APP_NAME_LC!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 +++ replace 's|!!ASSETS_REPOSITORY!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4567,10 +4567,10 @@ applying patch: ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
 +++ sed -i -E 's|!!GH_REPO_PATH!!|VSCodium/vscodium|g' ../patches/linux/update-xdg-path.patch
-+++ replace 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++++ replace 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
-+++ sed -i -E 's|!!GLOBAL_DIRNAME!!|shell-ide|g' ../patches/linux/update-xdg-path.patch
++++ sed -i -E 's|!!GLOBAL_DIRNAME!!|psychy-ide|g' ../patches/linux/update-xdg-path.patch
 +++ replace 's|!!ORG_NAME!!|VSCodium|g' ../patches/linux/update-xdg-path.patch
 +++ is_gnu_sed
 +++ sed --version
@@ -4601,7 +4601,7 @@ node:internal/modules/esm/get_format:176
   throw new ERR_UNKNOWN_FILE_EXTENSION(ext, filepath);
         ^
 
-TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /home/shradda/Shell-IDE/vscode/build/npm/preinstall.ts
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".ts" for /home/shradda/Psychy-IDE/vscode/build/npm/preinstall.ts
     at Object.getFileProtocolModuleFormat [as file:] (node:internal/modules/esm/get_format:176:9)
     at defaultGetFormat (node:internal/modules/esm/get_format:219:36)
     at defaultLoad (node:internal/modules/esm/load:143:22)

@@ -1,6 +1,6 @@
-# How to Run Shell-IDE
+# How to Run Psychy-IDE
 
-This guide provides instructions for building and running Shell-IDE (VS Code) on different operating systems.
+This guide provides instructions for building and running Psychy-IDE (VS Code) on different operating systems.
 
 ## 🚨 CRITICAL: Node.js Version
 
@@ -33,7 +33,7 @@ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 3.  **Run the IDE**:
     Open a **new terminal**:
     ```bash
-    cd ~/Shell-IDE/vscode
+    cd ~/Psychy-IDE/vscode
     nvm use 22
     ./scripts/code.sh
     ```
@@ -55,7 +55,7 @@ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 3. **Run the IDE**:
    ```bash
-   cd %USERPROFILE%\\Shell-IDE\\vscode
+   cd %USERPROFILE%\\Psychy-IDE\\vscode
    nvm use 22
    .\\scripts\\code.bat
    ```
@@ -75,7 +75,7 @@ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 3. **Run the IDE**:
    ```bash
-   cd ~/Shell-IDE/vscode
+   cd ~/Psychy-IDE/vscode
    nvm use 22
    ./scripts/code.sh
    ```
@@ -96,7 +96,7 @@ export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 
 3. **Run the IDE**:
    ```bash
-   cd ~/Shell-IDE/vscode
+   cd ~/Psychy-IDE/vscode
    nvm use 22
    ./scripts/code.sh
    ```
