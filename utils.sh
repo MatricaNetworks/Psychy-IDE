@@ -34,7 +34,6 @@ apply_actions() {
             fi
           else
             echo "Not found: ${ENTRY_PATH}" >&2
-            exit 4
           fi
         done
       ;;
