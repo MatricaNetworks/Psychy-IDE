@@ -88,6 +88,9 @@ VSCODE_HOST_MOUNT="$( pwd )"
 export VSCODE_HOST_MOUNT
 export VSCODE_REMOTE_DEPENDENCIES_CONTAINER_NAME
 
+VSCODE_NPMRC_PATH="${VSCODE_HOST_MOUNT}/.npmrc"
+export VSCODE_NPMRC_PATH
+
 sed -i "/target/s/\"22.*\"/\"${NODE_VERSION}\"/" remote/.npmrc
 
 if [[ -d "../patches/linux/reh/" ]]; then

@@ -23,6 +23,8 @@ VSCODE_HOST_MOUNT="$( pwd )"
 VSCODE_REMOTE_DEPENDENCIES_CONTAINER_NAME="vscodium/vscodium-linux-build-agent:alpine-${VSCODE_ARCH}"
 
 export VSCODE_HOST_MOUNT VSCODE_REMOTE_DEPENDENCIES_CONTAINER_NAME
+VSCODE_NPMRC_PATH="${VSCODE_HOST_MOUNT}/.npmrc"
+export VSCODE_NPMRC_PATH
 
 if [[ -d "../patches/alpine/reh/" ]]; then
   for file in "../patches/alpine/reh/"*.patch; do
