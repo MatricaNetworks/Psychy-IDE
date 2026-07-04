@@ -1,5 +1,6 @@
 # How to Run Psychy-IDE
 
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all.
 This guide provides instructions for building and running Psychy-IDE (VS Code) on different operating systems.
 
 ## 🚨 CRITICAL: Node.js Version

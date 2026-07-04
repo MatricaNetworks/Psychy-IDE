@@ -1,0 +1,56 @@
+Building Psychy-IDE for Different Platforms
+===========================================
+
+Psychy-IDE leverages the VSCodium build pipeline but is hardened and pre-configured for heavy-duty mobile development. Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all.
+
+Prerequisites
+-------------
+- Node.js (Version matching `.nvmrc`)
+- Python 3
+- Git
+- `jq`
+
+--------------------------------------------------------------------------------
+
+1. Building for Linux
+---------------------
+You can build for Linux either via GitHub Actions or locally.
+
+* Option A: Run the `ci-build-linux.yml` GitHub Action workflow.
+* Option B: Locally execute the following commands in your terminal:
+    ```bash
+    export OS_NAME="linux"
+    ./get_repo.sh
+    ./build.sh
+    ```
+  This will produce AppImage, deb, and rpm packages in the `artifacts/` or `vscode/` build directory.
+
+--------------------------------------------------------------------------------
+
+2. Building for macOS
+---------------------
+Ensure Xcode and command line tools are installed on your macOS machine.
+
+* Option A: Run the `ci-build-macos.yml` GitHub Action workflow.
+* Option B: Locally execute the following commands in your terminal:
+    ```bash
+    export OS_NAME="osx"
+    ./get_repo.sh
+    ./build.sh
+    ```
+  This will produce a macOS `.dmg` and `.zip` file.
+
+--------------------------------------------------------------------------------
+
+3. Building for Windows
+-----------------------
+You can build for Windows using GitHub Actions or locally from a Git Bash/WSL environment.
+
+* Option A: Run the `ci-build-windows.yml` GitHub Action workflow.
+* Option B: Locally execute the following commands from a Windows environment with Git Bash/WSL:
+    ```bash
+    export OS_NAME="windows"
+    ./get_repo.sh
+    ./build.sh
+    ```
+  This produces the Windows Installer (`.msi` / `.exe`).

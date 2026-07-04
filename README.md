@@ -144,7 +144,7 @@ Capabilities:
 
 ## Mobile App Development
 
-Psychy-IDE is pre-configured as a full-featured Apple and Android Development Environment, completely replacing the need for Xcode and Android Studio.
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all. Psychy-IDE is pre-configured as a full-featured Apple and Android Development Environment, completely replacing the need for Xcode and Android Studio.
 
 ### Android Studio Capabilities
 - **Native Gradle Integrations**: Visualize, sync, and execute Gradle tasks natively in the IDE.

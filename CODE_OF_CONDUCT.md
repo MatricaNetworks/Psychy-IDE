@@ -1,5 +1,6 @@
 # Contributor Covenant Code of Conduct
 
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all.
 ## Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our

@@ -47,7 +47,7 @@ Psychy-IDE leverages the VSCodium build pipeline but is hardened and pre-configu
 
 ## Using Android Studio & Xcode Capabilities
 
-Psychy-IDE has been supercharged to fully replace Android Studio and Xcode. By injecting the `psychy-mobile-pack` into the build process, you get an out-of-the-box native experience.
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all. Psychy-IDE has been supercharged to fully replace Android Studio and Xcode. By injecting the `psychy-mobile-pack` into the build process, you get an out-of-the-box native experience.
 
 ### 📱 Android Development
 When you open an Android/Kotlin/Java/Flutter project, Psychy-IDE automatically activates the following features:

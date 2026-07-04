@@ -1,3 +1,4 @@
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all.
 update vscode to [@@MS_TAG@@](@@MS_URL@@)
 
 @@RELEASE_NOTES@@

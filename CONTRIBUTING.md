@@ -1,5 +1,6 @@
 # Contributing
 
+Instead of needing Android Studio for Android and Xcode for iOS, this IDE does all.
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
 #### Table Of Contents
