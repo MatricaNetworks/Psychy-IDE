@@ -1,8 +1,14 @@
 diff --git a/build/npm/postinstall.ts b/build/npm/postinstall.ts
-index dc154d4b..9899700b 100644
+index dc154d4b..efa0e582 100644
 --- a/build/npm/postinstall.ts
 +++ b/build/npm/postinstall.ts
-@@ -82,8 +82,10 @@ async function npmInstallAsync(dir: string, opts?: child_process.SpawnOptions):
+@@ -77,13 +77,15 @@ async function npmInstallAsync(dir: string, opts?: child_process.SpawnOptions):
+ 		}
+ 		run('sudo', [
+ 			'docker', 'run',
+-			'-e', 'GITHUB_TOKEN',
++			'-e', `GITHUB_TOKEN=${process.env['GITHUB_TOKEN'] || ''}`,
+ 			'-v', `${process.env['VSCODE_HOST_MOUNT']}:/root/vscode`,
  			'-v', `${process.env['VSCODE_HOST_MOUNT']}/.build/.netrc:/root/.netrc`,
  			'-v', `${process.env['VSCODE_NPMRC_PATH']}:/root/.npmrc`,
  			'-w', path.resolve('/root/vscode', dir),
