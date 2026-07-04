@@ -1,4 +1,6 @@
 {
+  "enableTelemetry": false,
+  "enableCrashReporter": false,
   "extensionAllowedBadgeProviders": [
     "api.bintray.com",
     "api.travis-ci.com",
