@@ -1,0 +1,57 @@
+{
+  "name": "psychy-ai-ext",
+  "displayName": "Psychy AI",
+  "description": "AI-Native Engineering OS for Psychy-IDE",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:psychy-ai-chat"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "psychy-ai-explorer",
+          "title": "Psychy AI",
+          "icon": "$(hubot)"
+        }
+      ]
+    },
+    "views": {
+      "psychy-ai-explorer": [
+        {
+          "type": "webview",
+          "id": "psychy-ai-chat",
+          "name": "AI Assistant"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "psychyAi.start",
+        "title": "Start Psychy AI"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.3.3"
+  }
+}
