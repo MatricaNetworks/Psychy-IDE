@@ -14,8 +14,34 @@ export async function activate(context: vscode.ExtensionContext) {
     return; // Block execution until logged in
   }
 
-  // 2. Start the Extension
-  const provider = new PsychyAIWebviewProvider(context.extensionUri, session.account.label);
+  // 2. OpenRouter & Hugging Face API Keys
+  let openRouterKey = await context.secrets.get('OPENROUTER_API_KEY');
+  if (!openRouterKey) {
+    openRouterKey = await vscode.window.showInputBox({
+      prompt: 'Enter your OpenRouter API Key for API generation',
+      ignoreFocusOut: true,
+      password: true
+    }) || '';
+    if (openRouterKey) await context.secrets.store('OPENROUTER_API_KEY', openRouterKey);
+  }
+
+  let huggingFaceKey = await context.secrets.get('HUGGINGFACE_API_KEY');
+  if (!huggingFaceKey) {
+    huggingFaceKey = await vscode.window.showInputBox({
+      prompt: 'Enter your Hugging Face API Key for API generation',
+      ignoreFocusOut: true,
+      password: true
+    }) || '';
+    if (huggingFaceKey) await context.secrets.store('HUGGINGFACE_API_KEY', huggingFaceKey);
+  }
+
+  // 3. Start the Extension
+  const provider = new PsychyAIWebviewProvider(
+    context.extensionUri, 
+    session.account.label,
+    openRouterKey,
+    huggingFaceKey
+  );
 
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(

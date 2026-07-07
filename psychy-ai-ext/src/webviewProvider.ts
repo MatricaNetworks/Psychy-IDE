@@ -6,7 +6,12 @@ export class PsychyAIWebviewProvider implements vscode.WebviewViewProvider {
   private _view?: vscode.WebviewView;
   private socket?: Socket;
 
-  constructor(private readonly _extensionUri: vscode.Uri, private readonly _userEmail: string) {}
+  constructor(
+    private readonly _extensionUri: vscode.Uri, 
+    private readonly _userEmail: string,
+    private readonly _openRouterKey?: string,
+    private readonly _huggingFaceKey?: string
+  ) {}
 
   public resolveWebviewView(
     webviewView: vscode.WebviewView,
@@ -71,7 +76,9 @@ export class PsychyAIWebviewProvider implements vscode.WebviewViewProvider {
       activeFile: editor?.document.uri.fsPath,
       cursorPosition: editor ? { line: editor.selection.active.line, column: editor.selection.active.character } : undefined,
       workspaceRoot: vscode.workspace.workspaceFolders?.[0].uri.fsPath,
-      userEmail: this._userEmail
+      userEmail: this._userEmail,
+      openRouterKey: this._openRouterKey,
+      huggingFaceKey: this._huggingFaceKey
     };
 
     this.socket.emit('execute', { prompt, context });
