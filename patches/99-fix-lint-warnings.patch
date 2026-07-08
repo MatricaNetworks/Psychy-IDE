@@ -1,79 +1,3 @@
-diff --git a/extensions/copilot/package.json b/extensions/copilot/package.json
-index 6636db84..6a1e97c4 100644
---- a/extensions/copilot/package.json
-+++ b/extensions/copilot/package.json
-@@ -86,71 +86,6 @@
- 	],
- 	"main": "./dist/extension",
- 	"l10n": "./l10n",
--	"enabledApiProposals": [
--		"agentSessionsWorkspace",
--		"agentsWindowConfiguration",
--		"chatDebug",
--		"chatHooks",
--		"extensionsAny",
--		"newSymbolNamesProvider",
--		"interactive",
--		"codeActionAI",
--		"activeComment",
--		"commentReveal",
--		"contribCommentThreadAdditionalMenu",
--		"contribCommentsViewThreadMenus",
--		"contribChatEditorInlineGutterMenu",
--		"documentFiltersExclusive",
--		"embeddings",
--		"findTextInFiles",
--		"findTextInFiles2",
--		"languageModelToolSupportsModel",
--		"findFiles2",
--		"textSearchProvider",
--		"terminalDataWriteEvent",
--		"terminalExecuteCommandEvent",
--		"terminalSelection",
--		"terminalQuickFixProvider",
--		"mappedEditsProvider",
--		"aiRelatedInformation",
--		"aiSettingsSearch",
--		"chatParticipantAdditions",
--		"defaultChatParticipant",
--		"contribSourceControlInputBoxMenu",
--		"authLearnMore",
--		"testObserver",
--		"aiTextSearchProvider",
--		"chatParticipantPrivate",
--		"chatProvider",
--		"contribDebugCreateConfiguration",
--		"chatReferenceDiagnostic",
--		"textSearchProvider2",
--		"chatReferenceBinaryData",
--		"languageModelSystem",
--		"languageModelCapabilities",
--		"languageModelPricing",
--		"inlineCompletionsAdditions",
--		"chatStatusItem",
--		"chatInputNotification",
--		"taskProblemMatcherStatus",
--		"contribLanguageModelToolSets",
--		"textDocumentChangeReason",
--		"resolvers",
--		"taskExecutionTerminal",
--		"dataChannels",
--		"languageModelThinkingPart",
--		"chatSessionsProvider",
--		"devDeviceId",
--		"contribEditorContentMenu",
--		"chatPromptFiles",
--		"mcpServerDefinitions",
--		"tabInputMultiDiff",
--		"workspaceTrust",
--		"environmentPower",
--		"terminalTitle",
--		"toolInvocationApproveCombination",
--		"chatSessionCustomizationProvider"
--	],
- 	"contributes": {
- 		"languageModelTools": [
- 			{
 diff --git a/extensions/git-base/package.json b/extensions/git-base/package.json
 index 62f32d03..87a74ddf 100644
 --- a/extensions/git-base/package.json
@@ -123,3 +47,39 @@ index 02607acc..b15a9182 100644
    "main": "./out/extension",
    "browser": "./dist/browser/testResolverMain",
    "devDependencies": {
+diff --git a/extensions/vscode-test-resolver/esbuild.browser.mts b/extensions/vscode-test-resolver/esbuild.browser.mts
+index 29f504d6..9c66296d 100644
+--- a/extensions/vscode-test-resolver/esbuild.browser.mts
++++ b/extensions/vscode-test-resolver/esbuild.browser.mts
+@@ -2,6 +2,7 @@
+  *  Copyright (c) Microsoft Corporation. All rights reserved.
+  *  Licensed under the MIT License. See License.txt in the project root for license information.
+  *--------------------------------------------------------------------------------------------*/
++/// <reference types="node" />
+ import * as path from 'node:path';
+ import { run } from '../esbuild-extension-common.mts';
+ 
+diff --git a/extensions/vscode-test-resolver/esbuild.mts b/extensions/vscode-test-resolver/esbuild.mts
+index 2b75ca70..d170fcf4 100644
+--- a/extensions/vscode-test-resolver/esbuild.mts
++++ b/extensions/vscode-test-resolver/esbuild.mts
+@@ -2,6 +2,7 @@
+  *  Copyright (c) Microsoft Corporation. All rights reserved.
+  *  Licensed under the MIT License. See License.txt in the project root for license information.
+  *--------------------------------------------------------------------------------------------*/
++/// <reference types="node" />
+ import * as path from 'node:path';
+ import { run } from '../esbuild-extension-common.mts';
+ 
+diff --git a/extensions/vscode-test-resolver/tsconfig.json b/extensions/vscode-test-resolver/tsconfig.json
+index e5e48c32..0a0d7d3f 100644
+--- a/extensions/vscode-test-resolver/tsconfig.json
++++ b/extensions/vscode-test-resolver/tsconfig.json
+@@ -10,6 +10,7 @@
+ 			"node"
+ 		],
+ 		"lib": [
++			"ES2024",
+ 			"WebWorker"
+ 		]
+ 	},

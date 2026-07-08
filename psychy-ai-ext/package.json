@@ -10,9 +10,6 @@
     "Machine Learning",
     "Other"
   ],
-  "activationEvents": [
-    "onView:psychy-ai-chat"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "viewsContainers": {
@@ -29,7 +26,8 @@
         {
           "type": "webview",
           "id": "psychy-ai-chat",
-          "name": "AI Assistant"
+          "name": "AI Assistant",
+          "icon": "$(hubot)"
         }
       ]
     },
